@@ -33,10 +33,10 @@ export default function RootLayout({
       lang="en"
       className={`${garageFallback.variable} ${neueFallback.variable} h-full antialiased`}
     >
-      <AnnouncementPopup />
 
       <body className="min-h-full flex flex-col font-neue">
-        
+              <AnnouncementPopup />
+
         <Navbar />
         <WhatsAppFloat/>
         {children}
