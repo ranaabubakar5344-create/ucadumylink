@@ -570,6 +570,7 @@ export default function EquivalentQualificationsPage() {
                   ))}
                 </select>
 
+                <ChevronDown className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2" />
               </div>
             </div>
           </div>
@@ -581,7 +582,7 @@ export default function EquivalentQualificationsPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-14 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#8ca700]">
+              <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#C8EB00]">
                 Selected Country
               </p>
 
@@ -592,11 +593,11 @@ export default function EquivalentQualificationsPage() {
               </h2>
             </div>
 
-          
+         
           </div>
 
           {/* ACADEMIC SECTIONS */}
-          <div className="space-y-7 pt-14">
+          <div className="space-y-7   mt-12" >
             {selectedCountry.sections.map((section, sectionIndex) => {
               const Icon =
                 sectionIcons[sectionIndex] ?? GraduationCap;
