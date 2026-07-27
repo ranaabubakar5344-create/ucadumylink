@@ -504,7 +504,24 @@ const countries: CountryRequirements[] = [
 },
 ];
 
+
+
 const sectionIcons = [GraduationCap, School, BookOpen];
+
+const ibRequirements = [
+  {
+    title: "Undergraduate Courses",
+    text: "27 total points in the International Baccalaureate Diploma Programme, with at least 15 IB points at Higher Level (HL). This excludes BA (Hons) Architecture.",
+  },
+  {
+    title: "BA (Hons) Architecture",
+    text: "29 total points in the International Baccalaureate Diploma Programme, with at least 16 IB points at Higher Level (HL).",
+  },
+  {
+    title: "Integrated Foundation Year",
+    text: "A minimum of 24 points from the International Baccalaureate.",
+  },
+];
 
 export default function EquivalentQualificationsPage() {
   const [selectedCode, setSelectedCode] = useState("PK");
@@ -513,154 +530,180 @@ export default function EquivalentQualificationsPage() {
     countries.find((country) => country.code === selectedCode) ?? countries[0];
 
   return (
-    <main className="overflow-x-hidden bg-[#F7F7F2] text-[#0A1414]">
+    <main className="min-h-screen overflow-x-hidden bg-[#F3F4EE] text-[#0A1414]">
       {/* HERO */}
-      <section className="relative overflow-hidden bg-[#0A1414] text-white">
-        <div className="absolute -right-24 -top-28 h-[420px] w-[420px] rounded-full bg-[#C8EB00]/10 blur-3xl" />
-        <div className="absolute -bottom-40 left-1/4 h-[420px] w-[420px] rounded-full bg-[#C8EB00]/5 blur-3xl" />
+      <section className="relative isolate overflow-hidden bg-[#0A1414] text-white">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute -right-24 -top-28 h-[420px] w-[420px] rounded-full bg-[#C8EB00]/15 blur-3xl" />
+          <div className="absolute -bottom-36 left-[18%] h-[380px] w-[380px] rounded-full bg-[#C8EB00]/10 blur-3xl" />
+          <div className="absolute right-[12%] top-0 h-full w-px bg-white/10" />
+        </div>
 
-        <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-28">
-          <p className="font-neue text-xs font-bold uppercase tracking-[0.28em] text-[#C8EB00] sm:text-sm">
-            International Admissions
-          </p>
+        <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-28 lg:px-10">
+          <div className="max-w-5xl">
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#C8EB00] sm:text-sm">
+              International Admissions
+            </p>
 
-          <h1 className="font-garage mt-6 max-w-5xl text-[50px] font-black uppercase leading-[1.0] tracking-[-0.05em] sm:text-[80px] md:text-[96px]">
-            Equivalent
-            <br />
-            <span className="text-[#C8EB00]">Qualifications</span>
-          </h1>
+            <h1 className="mt-6 text-[52px] font-black uppercase leading-[0.9] tracking-[-0.055em] sm:text-[74px] md:text-[94px] lg:text-[112px]">
+              Equivalent
+              <span className="block text-[#C8EB00]">Qualifications</span>
+            </h1>
 
-          {/* <p className="mt-7 max-w-3xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
-            Find the academic and English-language requirements equivalent to
-            UK qualifications for your country.
-          </p> */}
+            <p className="mt-7 max-w-2xl text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
+              Select your country to review the academic and English-language
+              qualifications normally considered for entry to UCA programmes.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* COUNTRY SELECTOR */}
-      <section className="relative z-20 -mt-8">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="border border-black/10 bg-white p-6 shadow-[0_20px_65px_rgba(10,20,20,0.12)] md:p-8">
-            <div className="grid gap-7 lg:grid-cols-[1fr_420px] lg:items-end">
+      <section className="relative z-10 -mt-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          <div className="border border-black/10 bg-white p-6 shadow-[0_24px_70px_rgba(10,20,20,0.12)] md:p-8">
+            <div className="grid gap-8 lg:grid-cols-[1fr_420px] lg:items-end">
               <div>
-                <p className="font-neue text-xs font-bold uppercase tracking-[0.24em] text-[#8ca700]">
+                <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#7f9800]">
                   Select Country
                 </p>
 
-                <h2 className="font-garage mt-3 text-[34px] font-black uppercase leading-none tracking-[-0.035em] sm:text-[44px]">
+                <h2 className="mt-3 text-[34px] font-black uppercase leading-[0.95] tracking-[-0.04em] sm:text-[46px]">
                   Find Your Entry Requirements
                 </h2>
 
-                <p className="mt-4 max-w-2xl text-base leading-7 text-black/65">
-                  Choose your country to view equivalent academic and English
-                  language requirements.
+                <p className="mt-4 max-w-2xl leading-7 text-black/60">
+                  Choose a nationality to view relevant Foundation,
+                  Undergraduate, Postgraduate and English-language guidance.
                 </p>
               </div>
 
-              <div className="relative">
-                <select
-                  value={selectedCode}
-                  onChange={(event) => setSelectedCode(event.target.value)}
-                  className="h-16 w-full appearance-none border border-[#0A1414]/20 bg-[#F7F7F2] px-5 pr-14 text-[17px] font-bold text-[#0A1414] outline-none transition focus:border-[#C8EB00] focus:ring-2 focus:ring-[#C8EB00]/25"
-                >
-                  {countries.map((country) => (
-                    <option key={country.code} value={country.code}>
-                      {country.flag} {country.name}
-                    </option>
-                  ))}
-                </select>
+              <label className="block">
+                <span className="mb-2 block text-sm font-bold uppercase tracking-[0.12em]">
+                  Country
+                </span>
 
-                <ChevronDown className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2" />
-              </div>
+                <div className="relative">
+                  <select
+                    value={selectedCode}
+                    onChange={(event) => setSelectedCode(event.target.value)}
+                    className="h-16 w-full appearance-none border border-black/15 bg-[#F3F4EE] px-5 pr-14 text-[17px] font-bold outline-none transition focus:border-[#C8EB00] focus:ring-4 focus:ring-[#C8EB00]/15"
+                  >
+                    {countries.map((country) => (
+                      <option key={country.code} value={country.code}>
+                        {country.flag} {country.name}
+                      </option>
+                    ))}
+                  </select>
+
+                  <ChevronDown className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2" />
+                </div>
+              </label>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SELECTED COUNTRY */}
+      {/* COUNTRY CONTENT */}
       <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="mb-14 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          <div className="mb-12 grid gap-8 border-b border-black/10 pb-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#8ca700]">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#7f9800]">
                 Selected Country
               </p>
 
-              <h2 className="font-garage mt-4 text-[48px] font-black uppercase leading-[0.9] tracking-[-0.04em] sm:text-[64px] md:text-[78px]">
-                {selectedCountry.flag}
-                <br />
+              <h2 className="mt-4 text-[52px] font-black uppercase leading-[0.88] tracking-[-0.05em] sm:text-[70px] md:text-[86px]">
+                <span className="mr-3">{selectedCountry.flag}</span>
                 {selectedCountry.name}
               </h2>
             </div>
 
             <div className="border-l-4 border-[#C8EB00] bg-white p-6 md:p-8">
-              {/* <p className="text-base leading-8 text-black/70 md:text-lg">
+              <p className="text-base leading-8 text-black/65 md:text-lg">
                 {selectedCountry.introduction}
-              </p> */}
+              </p>
             </div>
           </div>
 
-          {/* ACADEMIC SECTIONS */}
-          <div className="space-y-7">
+          {/* REQUIREMENT CARDS */}
+          <div className="space-y-6">
             {selectedCountry.sections.map((section, sectionIndex) => {
-              const Icon =
-                sectionIcons[sectionIndex] ?? GraduationCap;
+              const Icon = sectionIcons[sectionIndex] ?? GraduationCap;
 
               return (
                 <article
-                  key={section.title}
-                  className="group border border-black/10 bg-white transition duration-300 hover:border-[#C8EB00]"
+                  key={`${selectedCountry.code}-${section.title}`}
+                  className="overflow-hidden border border-black/10 bg-white"
                 >
-                  <div className="grid lg:grid-cols-[310px_minmax(0,1fr)]">
-                    <div className="border-b border-black/10 bg-[#0A1414] p-7 text-white lg:border-b-0 lg:border-r">
+                  <div className="grid lg:grid-cols-[300px_minmax(0,1fr)]">
+                    <div className="bg-[#0A1414] p-7 text-white md:p-8">
                       <div className="flex h-14 w-14 items-center justify-center bg-[#C8EB00] text-[#0A1414]">
                         <Icon className="h-7 w-7" />
                       </div>
 
-                      <h3 className="font-garage mt-7 text-[32px] font-black uppercase leading-[0.95] tracking-[-0.03em]">
+                      <p className="mt-7 text-xs font-bold uppercase tracking-[0.2em] text-[#C8EB00]">
+                        Requirement {String(sectionIndex + 1).padStart(2, "0")}
+                      </p>
+
+                      <h3 className="mt-3 text-[30px] font-black uppercase leading-[0.95] tracking-[-0.035em]">
                         {section.title}
                       </h3>
                     </div>
 
                     <div className="p-7 md:p-9">
                       {section.description && (
-                        <p className="mb-6 text-base leading-7 text-black/70 md:text-lg">
+                        <p className="mb-6 max-w-3xl text-base leading-8 text-black/65 md:text-lg">
                           {section.description}
                         </p>
                       )}
 
                       {section.items && (
-                        <div className="space-y-4">
-                          {section.items.map((item) => (
-                            <RequirementItem key={item} text={item} />
+                        <div className="space-y-3">
+                          {section.items.map((item, itemIndex) => (
+                            <RequirementItem
+                              key={`${section.title}-${itemIndex}`}
+                              text={item}
+                            />
                           ))}
                         </div>
                       )}
 
                       {section.subsections && (
-                        <div className="space-y-9">
-                          {section.subsections.map((subsection) => (
-                            <div
-                              key={subsection.title}
-                              className="border-b border-black/10 pb-8 last:border-b-0 last:pb-0"
-                            >
-                              <h4 className="font-garage text-[25px] font-black uppercase leading-none">
-                                {subsection.title}
-                              </h4>
+                        <div className="space-y-8">
+                          {section.subsections.map(
+                            (subsection, subsectionIndex) => (
+                              <div
+                                key={`${section.title}-${subsection.title}`}
+                                className="border-b border-black/10 pb-8 last:border-b-0 last:pb-0"
+                              >
+                                <div className="flex items-center gap-3">
+                                  <span className="flex h-8 w-8 items-center justify-center bg-[#C8EB00] text-sm font-black">
+                                    {subsectionIndex + 1}
+                                  </span>
 
-                              {subsection.description && (
-                                <p className="mt-4 text-base leading-7 text-black/65">
-                                  {subsection.description}
-                                </p>
-                              )}
+                                  <h4 className="text-[23px] font-black uppercase leading-none tracking-[-0.025em]">
+                                    {subsection.title}
+                                  </h4>
+                                </div>
 
-                              <div className="mt-5 space-y-4">
-                                {subsection.items.map((item) => (
-                                  <RequirementItem key={item} text={item} />
-                                ))}
+                                {subsection.description && (
+                                  <p className="mt-4 leading-7 text-black/60">
+                                    {subsection.description}
+                                  </p>
+                                )}
+
+                                <div className="mt-5 space-y-3">
+                                  {subsection.items.map((item, itemIndex) => (
+                                    <RequirementItem
+                                      key={`${subsection.title}-${itemIndex}`}
+                                      text={item}
+                                    />
+                                  ))}
+                                </div>
                               </div>
-                            </div>
-                          ))}
+                            )
+                          )}
                         </div>
                       )}
                     </div>
@@ -671,17 +714,19 @@ export default function EquivalentQualificationsPage() {
           </div>
 
           {/* ENGLISH REQUIREMENTS */}
-          <div className="mt-14 overflow-hidden border border-black/10 bg-white">
+          <section className="mt-14 overflow-hidden border border-black/10 bg-white">
             <div className="bg-[#C8EB00] p-7 md:p-9">
-              <div className="flex items-center gap-4">
-                <Languages className="h-9 w-9" />
+              <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center bg-[#0A1414] text-[#C8EB00]">
+                  <Languages className="h-7 w-7" />
+                </div>
 
                 <div>
-                  <p className="font-neue text-xs font-bold uppercase tracking-[0.24em]">
+                  <p className="text-xs font-bold uppercase tracking-[0.22em]">
                     English Language
                   </p>
 
-                  <h3 className="font-garage mt-2 text-[34px] font-black uppercase leading-none md:text-[46px]">
+                  <h3 className="mt-2 text-[34px] font-black uppercase leading-none tracking-[-0.035em] md:text-[48px]">
                     IELTS Requirements
                   </h3>
                 </div>
@@ -689,129 +734,99 @@ export default function EquivalentQualificationsPage() {
             </div>
 
             <div className="divide-y divide-black/10">
-              {selectedCountry.englishRequirements.map((item) => (
+              {selectedCountry.englishRequirements.map((item, index) => (
                 <div
-                  key={item.programme}
-                  className="grid gap-3 p-6 transition hover:bg-[#F7F7F2] md:grid-cols-[1fr_1fr] md:items-center md:px-8"
+                  key={`${selectedCountry.code}-${item.programme}-${index}`}
+                  className="grid gap-3 p-6 transition hover:bg-[#F3F4EE] md:grid-cols-[1fr_1.1fr] md:items-center md:px-8"
                 >
                   <p className="font-bold">{item.programme}</p>
-                  <p className="leading-7 text-black/65">
-                    {item.requirement}
-                  </p>
+                  <p className="leading-7 text-black/60">{item.requirement}</p>
                 </div>
               ))}
             </div>
-          </div>
-{/* INTERNATIONAL BACCALAUREATE */}
-<div className="mt-14 overflow-hidden border border-[#C8EB00]/40 bg-[#0A1414] text-white shadow-[0_20px_55px_rgba(10,20,20,0.18)]">
-  <div className="grid lg:grid-cols-[320px_minmax(0,1fr)]">
-    {/* LEFT */}
-    <div className="border-b border-white/10 bg-[#C8EB00] p-7 text-[#0A1414] lg:border-b-0 lg:border-r lg:border-[#0A1414]/10 md:p-9">
-   
+          </section>
 
-      
- <h3 className="font-garage mt-2 text-[34px] font-black uppercase leading-none md:text-[46px]">
- International
-        <br />
-        Baccalaureate                  </h3>
-      <p className="mt-5 text-sm leading-6 text-[#0A1414]/70">
-        Entry guidance for applicants completing the International
-        Baccalaureate Diploma Programme.
-      </p>
-    </div>
+          {/* INTERNATIONAL BACCALAUREATE */}
+          <section className="mt-14 overflow-hidden border border-[#C8EB00]/50 bg-[#0A1414] text-white">
+            <div className="grid lg:grid-cols-[320px_minmax(0,1fr)]">
+              <div className="bg-[#C8EB00] p-7 text-[#0A1414] md:p-9">
+                <p className="text-xs font-bold uppercase tracking-[0.22em]">
+                  Alternative Qualification
+                </p>
 
-    {/* RIGHT */}
-    <div className="p-7 md:p-9">
-      <p className="max-w-4xl text-base leading-8 text-white/75 md:text-lg">
-        If you are studying the International Baccalaureate, the number of
-        points you need to achieve can vary depending on the strength of your
-        portfolio and the number of Higher Level points you achieve.
-      </p>
+                <h3 className="mt-4 text-[36px] font-black uppercase leading-[0.9] tracking-[-0.04em] md:text-[48px]">
+                  International
+                  <br />
+                  Baccalaureate
+                </h3>
 
-      <p className="mt-5 font-semibold text-white">
-        As a guide, applicants are usually asked to achieve:
-      </p>
+                <p className="mt-5 text-sm leading-6 text-black/65">
+                  Guidance for applicants completing the International
+                  Baccalaureate Diploma Programme.
+                </p>
+              </div>
 
-      <div className="mt-7 space-y-4">
-        {[
-          {
-            title: "Undergraduate Courses",
-            text: "27 total points in the International Baccalaureate Diploma Programme, with at least 15 IB points at Higher Level (HL). This excludes BA (Hons) Architecture.",
-          },
-          {
-            title: "BA (Hons) Architecture",
-            text: "29 total points in the International Baccalaureate Diploma Programme, with at least 16 IB points at Higher Level (HL).",
-          },
-          {
-            title: "Undergraduate with Integrated Foundation Year",
-            text: "A minimum of 24 points from the International Baccalaureate.",
-          },
-        ].map((item) => (
-          <div
-            key={item.title}
-            className="grid gap-3 border-b border-white/10 pb-5 sm:grid-cols-[230px_minmax(0,1fr)]"
-          >
-            <h4 className="font-garage text-[20px] font-black uppercase leading-[1.05] text-[#C8EB00]">
-              {item.title}
-            </h4>
+              <div className="p-7 md:p-9">
+                <p className="max-w-4xl text-base leading-8 text-white/70 md:text-lg">
+                  The number of points required may vary depending on the
+                  strength of your portfolio and the number of Higher Level
+                  points achieved.
+                </p>
 
-            <p className="text-[15px] leading-7 text-white/75 md:text-base">
-              {item.text}
-            </p>
-          </div>
-        ))}
-      </div>
+                <div className="mt-7 divide-y divide-white/10 border-y border-white/10">
+                  {ibRequirements.map((item) => (
+                    <div
+                      key={item.title}
+                      className="grid gap-3 py-5 sm:grid-cols-[230px_minmax(0,1fr)]"
+                    >
+                      <h4 className="text-[19px] font-black uppercase leading-[1.05] text-[#C8EB00]">
+                        {item.title}
+                      </h4>
 
-      <div className="mt-7 border-l-4 border-[#C8EB00] bg-white/[0.05] p-5">
-        <p className="text-[15px] leading-7 text-white/80 md:text-base">
-          We may occasionally make offers below the standard entry criteria to
-          applicants with a strong portfolio, or to students who have faced
-          circumstances that affected their performance and who were expected
-          to achieve a higher result.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-          {/* IMPORTANT NOTE */}
-          {/* <div className="mt-12 grid gap-7 bg-[#0A1414] p-7 text-white md:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
+                      <p className="text-[15px] leading-7 text-white/70 md:text-base">
+                        {item.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-7 border-l-4 border-[#C8EB00] bg-white/5 p-5">
+                  <p className="text-[15px] leading-7 text-white/75 md:text-base">
+                    Offers below the standard criteria may occasionally be made
+                    to applicants with a strong portfolio or where exceptional
+                    circumstances have affected academic performance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* CONTACT */}
+          <section className="mt-14 grid gap-7 bg-white p-7 md:p-9 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#C8EB00]">
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#7f9800]">
                 Need More Guidance?
               </p>
 
-              <h3 className="font-garage mt-4 text-[34px] font-black uppercase leading-[0.95] md:text-[48px]">
+              <h3 className="mt-3 text-[32px] font-black uppercase leading-none tracking-[-0.03em] md:text-[42px]">
                 Contact International Admissions
               </h3>
 
-              <p className="mt-5 max-w-3xl leading-7 text-white/70">
-                Entry requirements are provided as guidance. Applications may
-                be assessed individually, and individual programmes may have
-                additional or course-specific requirements.
+              <p className="mt-4 max-w-3xl leading-7 text-black/60">
+                Requirements are provided as general guidance. Individual
+                programmes may have additional academic, portfolio or
+                course-specific requirements.
               </p>
             </div>
 
             <a
-              href="#"
-              className="font-garage inline-flex items-center justify-center gap-3 bg-[#C8EB00] px-7 py-4 text-[17px] font-black uppercase text-[#0A1414] transition hover:bg-white"
+              href="mailto:internationaladmissions@uca.ac.uk"
+              className="inline-flex items-center justify-center gap-3 bg-[#0A1414] px-7 py-4 text-sm font-black uppercase tracking-[0.08em] text-[#C8EB00] transition hover:bg-[#C8EB00] hover:text-[#0A1414]"
             >
-              <Mail className="h-5 w-5" />
               Email Admissions
-            </a>
-          </div> */}
-
-          {/* OFFICIAL PAGE */}
-          <div className="mt-6 text-center">
-            <a
-              href="https://www.uca.ac.uk/international/equivalent-qualifications/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-bold text-[#0A1414] underline decoration-[#C8EB00] decoration-2 underline-offset-4"
-            >
-              View official UCA UK equivalent qualifications
               <ArrowRight className="h-4 w-4" />
             </a>
-          </div>
+          </section>
         </div>
       </section>
     </main>
@@ -821,13 +836,11 @@ export default function EquivalentQualificationsPage() {
 function RequirementItem({ text }: { text: string }) {
   return (
     <div className="flex items-start gap-4 border-b border-black/10 pb-4 last:border-b-0">
-      <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#C8EB00]">
+      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center bg-[#C8EB00]">
         <Check className="h-4 w-4 text-[#0A1414]" />
       </span>
 
-      <p className="text-[15px] leading-7 text-black/75 sm:text-base">
-        {text}
-      </p>
+      <p className="text-[15px] leading-7 text-black/70 sm:text-base">{text}</p>
     </div>
   );
 }
