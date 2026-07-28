@@ -513,7 +513,7 @@ const relevantCountryRequirement = getRelevantCountryRequirement();
                   <div>
                     <div className="mb-7 flex flex-col gap-4 border-b border-black/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
                       <div>
-                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#829b00]">
+                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#CBE800]">
                           {selectedCountry.flag} Requirements for{" "}
                           {selectedCountry.name}
                         </p>
