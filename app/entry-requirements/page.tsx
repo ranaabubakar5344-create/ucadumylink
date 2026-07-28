@@ -37,9 +37,9 @@ type CountryRequirements = {
 
 const countries: CountryRequirements[] = [
   {
-    code: "PK",
-    name: "Pakistan",
-    flag: "🇵🇰",
+      code: "PK",
+  name: "Pakistan",
+  flag: "🇵🇰",
     introduction:
       "Select Pakistan to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
     sections: [
@@ -124,9 +124,10 @@ const countries: CountryRequirements[] = [
 
 
     {
-    code: "IN",
-    name: "INDIAN",
-    flag: "🇮🇳",
+   code: "IN",
+  name: "India",
+  flag: "🇮🇳",
+
     introduction:
       "Select INDIA to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
     sections: [
@@ -210,7 +211,7 @@ const countries: CountryRequirements[] = [
   },
 
   {
-  code: "PH",
+ code: "PH",
   name: "Philippines",
   flag: "🇵🇭",
   introduction:
@@ -307,7 +308,7 @@ const countries: CountryRequirements[] = [
 
 
   {
-  code: "AE",
+ code: "AE",
   name: "United Arab Emirates",
   flag: "🇦🇪",
   introduction:
@@ -394,9 +395,10 @@ const countries: CountryRequirements[] = [
   ],
 },
    {
-  code: "US",
+   code: "US",
   name: "United States",
   flag: "🇺🇸",
+
   introduction:
     "Select the United States to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, advanced undergraduate entry, Pre-Master's and Master's study.",
 
@@ -501,6 +503,16 @@ const countries: CountryRequirements[] = [
         "Most applicants who have studied at degree level at a recognised US institution may be exempt from further English-language testing",
     },
   ],
+  
+},
+
+{
+  code: "OTHER",
+  name: "Other Country",
+  flag: "🌍",
+  introduction: "",
+  sections: [],
+  englishRequirements: [],
 },
 ];
 
@@ -558,17 +570,27 @@ export default function EquivalentQualificationsPage() {
               </div>
 
               <div className="relative">
-                <select
-                  value={selectedCode}
-                  onChange={(event) => setSelectedCode(event.target.value)}
-                  className="h-16 w-full appearance-none border border-[#0A1414]/20 bg-[#F7F7F2] px-5 pr-14 text-[17px] font-bold text-[#0A1414] outline-none transition focus:border-[#C8EB00] focus:ring-2 focus:ring-[#C8EB00]/25"
-                >
-                  {countries.map((country) => (
-                    <option key={country.code} value={country.code}>
-                      {country.flag} {country.name}
-                    </option>
-                  ))}
-                </select>
+               <select
+  value={selectedCode}
+  onChange={(event) => {
+    const value = event.target.value;
+
+    if (value === "OTHER") {
+      window.location.href =
+        "https://www.uca.ac.uk/international/equivalent-qualifications/";
+      return;
+    }
+
+    setSelectedCode(value);
+  }}
+  className="h-16 w-full appearance-none border border-black/15 bg-[#f4f5ef] px-5 pr-14 text-base font-bold outline-none transition focus:border-[#C8EB00] focus:ring-4 focus:ring-[#C8EB00]/20"
+>
+  {countries.map((country) => (
+    <option key={country.code} value={country.code}>
+      {country.flag} {country.name}
+    </option>
+  ))}
+</select>
 
                 <ChevronDown className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2" />
               </div>
