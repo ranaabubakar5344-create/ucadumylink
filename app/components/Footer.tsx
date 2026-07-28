@@ -7,7 +7,28 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa6";
-
+const socialLinks = [
+  {
+    icon: FaFacebookF,
+    href: "#",
+    label: "Facebook",
+  },
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/uca.uae/",
+    label: "Instagram",
+  },
+  {
+    icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/company/uca-feuc-ae/",
+    label: "LinkedIn",
+  },
+  {
+    icon: FaYoutube,
+    href: "#",
+    label: "YouTube",
+  },
+];
 export default function Footer() {
   return (
     <footer className="bg-[#0A1414] text-white">
@@ -110,19 +131,24 @@ export default function Footer() {
               Apply Now
               <ArrowRight className="h-5 w-5" />
             </Link>
-            <div className="mt-7 flex gap-3">
-              {[FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube].map(
-                (Icon, i) => (
-                  <Link
-                    key={i}
-                    href="#" 
-                    className="flex h-10 w-10 items-center justify-center border border-white/15 text-white hover:border-[#C8EB00] hover:bg-[#C8EB00] hover:text-[#0A1414]"
-                  >
-                    <Icon className="h-4 w-4" />
-                  </Link>
-                )
-              )}
-            </div>
+           <div className="mt-7 flex gap-3">
+  {socialLinks.map((item) => {
+    const Icon = item.icon;
+
+    return (
+      <Link
+        key={item.label}
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={item.label}
+        className="flex h-10 w-10 items-center justify-center border border-white/15 text-white transition duration-300 hover:border-[#C8EB00] hover:bg-[#C8EB00] hover:text-[#0A1414]"
+      >
+        <Icon className="h-4 w-4" />
+      </Link>
+    );
+  })}
+</div>
           </div>
         </div>
       </div>
