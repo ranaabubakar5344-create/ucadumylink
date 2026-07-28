@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AccreditationsSlider from "./AccrediationSlider";
+import { countries } from "@/app/data/countryRequirements";
+
 import {
   ArrowRight,
   Award,
@@ -58,7 +60,7 @@ export default function ProgrammeDetailClient({
   const [openSection, setOpenSection] = useState(0);
 
   const activeModuleData = programme.modules?.[activeModule];
-
+const [selectedCountryCode, setSelectedCountryCode] = useState("PK");
   const facts = [
     {
       icon: Clock3,
@@ -82,7 +84,93 @@ export default function ProgrammeDetailClient({
       highlight: true,
     },
   ];
+const selectedCountry =
+  countries.find((country) => country.code === selectedCountryCode) ??
+  countries[0];
 
+const getProgrammeRequirementType = () => {
+  const programmeText = `${programme.title} ${programme.level ?? ""} ${
+    programme.slug ?? ""
+  }`.toLowerCase();
+
+  if (
+    programmeText.includes("pre-master") ||
+    programmeText.includes("pre masters")
+  ) {
+    return "pre-masters";
+  }
+
+  if (
+    programmeText.includes("master") ||
+    programmeText.includes("mba") ||
+    programmeText.includes("postgraduate")
+  ) {
+    return "postgraduate";
+  }
+
+  if (
+    programmeText.includes("foundation") ||
+    programmeText.includes("integrated foundation")
+  ) {
+    return "foundation";
+  }
+
+  return "undergraduate";
+};
+
+const requirementType = getProgrammeRequirementType();
+
+const getRelevantCountryRequirement = () => {
+  if (!selectedCountry) return null;
+
+  if (requirementType === "undergraduate") {
+    return selectedCountry.sections.find((item) =>
+      item.title.toLowerCase().includes("undergraduate")
+    );
+  }
+
+  if (requirementType === "foundation") {
+    return selectedCountry.sections.find((item) =>
+      item.title.toLowerCase().includes("foundation")
+    );
+  }
+
+  const postgraduateSection = selectedCountry.sections.find((item) =>
+    item.title.toLowerCase().includes("postgraduate")
+  );
+
+  if (!postgraduateSection) return null;
+
+  if (requirementType === "pre-masters") {
+    const preMasters = postgraduateSection.subsections?.find((item) =>
+      item.title.toLowerCase().includes("pre-master")
+    );
+
+    return preMasters
+      ? {
+          title: preMasters.title,
+          description: preMasters.description,
+          items: preMasters.items,
+        }
+      : postgraduateSection;
+  }
+
+  const masters = postgraduateSection.subsections?.find(
+    (item) =>
+      item.title.toLowerCase().includes("master") &&
+      !item.title.toLowerCase().includes("pre-master")
+  );
+
+  return masters
+    ? {
+        title: masters.title,
+        description: masters.description,
+        items: masters.items,
+      }
+    : postgraduateSection;
+};
+
+const relevantCountryRequirement = getRelevantCountryRequirement();
   return (
     <main className="bg-white text-[#0A1414]">
       {/* HERO */}
@@ -312,85 +400,277 @@ export default function ProgrammeDetailClient({
                 </h2>
               </div>
 
-              <div className="space-y-4">
-                {programme.sections.map((section, index) => {
-                  const isOpen = openSection === index;
+          <div className="space-y-4">
+  {programme.sections.map((section, index) => {
+    const isOpen = openSection === index;
 
-                  return (
-                    <div key={section.title} className="border border-black/10">
-                      <button
-                        onClick={() => setOpenSection(isOpen ? -1 : index)}
-                        className="flex w-full items-center justify-between bg-[#F7F7F2] px-6 py-5 text-left"
-                      >
-                        <span className="font-garage text-[30px] font-black uppercase">
-                          {section.title}
-                        </span>
+    const isEntryCriteria =
+      section.title.toLowerCase().includes("entry criteria") ||
+      section.title.toLowerCase().includes("entry requirements");
 
-                        <ChevronDown
-                          className={`h-6 w-6 transition ${
-                            isOpen ? "rotate-180" : ""
-                          }`}
-                        />
-                      </button>
-
-                      <AnimatePresence>
-                        {isOpen && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            className="overflow-hidden"
-                          >
-                            <div className="space-y-6 bg-white p-6">
-                              {typeof section.content === "string" ? (
-                                <p className="text-lg leading-8 text-black/70">
-                                  {section.content}
-                                </p>
-                              ) : (
-                                Object.entries(section.content).map(
-                                  ([country, points]) => (
-                                    <div key={country}>
-                                      <h3 className="font-garage text-[26px] font-black uppercase text-[#0A1414]">
-                                        {country}
-                                      </h3>
-
-                                      <ul className="mt-3 space-y-2">
-                                        {points.map((point, i) => (
-                                          <li
-                                            key={i}
-                                            className="flex gap-3 text-black/70"
-                                          >
-                                            <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#C8EB00]" />
-                                            <span>{point}</span>
-                                            
-                                          </li>
-                                        ))}
-                                        
-                                      </ul>
-  
-                                    </div>
-                                  )
-                                )
-                              )}
-                                                                  {/* ENTRY REQUIREMENTS BUTTON */}
-    <div className="mt-8 border-t border-black/10 pt-6">
-      <Link
-        href="/entry-requirements"
-        className="font-garage group inline-flex items-center justify-center gap-3 bg-[#C8EB00] px-7 py-4 text-[17px] font-black uppercase text-[#0A1414] transition duration-300 hover:bg-[#0A1414] hover:text-[#C8EB00]"
+    return (
+      <div
+        key={`${section.title}-${index}`}
+        className="overflow-hidden border border-black/10 bg-white"
       >
-        View Entry Requirements in Detail
+        {/* ACCORDION HEADER */}
+{/* ACCORDION HEADER */}
+<div className="flex w-full flex-col bg-[#F7F7F2] md:flex-row md:items-center md:justify-between">
+  {/* LEFT HEADING */}
+  <button
+    type="button"
+    onClick={() => setOpenSection(isOpen ? -1 : index)}
+    className="flex min-h-[72px] w-full items-center px-5 py-5 text-left md:min-h-[76px] md:flex-1 md:px-6"
+  >
+    <span className="font-garage text-[24px] font-black uppercase leading-none text-[#0A1414] sm:text-[27px] md:text-[30px]">
+      {section.title}
+    </span>
+  </button>
 
-        <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-      </Link>
+  {isEntryCriteria ? (
+    <div className="flex w-full items-center gap-3 border-t border-black/10 px-4 py-4 md:w-auto md:shrink-0 md:border-l md:border-t-0 md:px-5">
+      <div className="relative min-w-0 flex-1 md:w-[240px] md:flex-none">
+        {/* <span className="pointer-events-none absolute left-4 top-1/2 z-10 -translate-y-1/2 text-xl">
+          {selectedCountry.flag}
+        </span> */}
+
+        <select
+          value={selectedCountryCode}
+          onChange={(event) => {
+            const value = event.target.value;
+
+            if (value === "OTHER") {
+              window.open(
+                "https://www.uca.ac.uk/international/equivalent-qualifications/",
+                "_blank",
+                "noopener,noreferrer"
+              );
+              return;
+            }
+
+            setSelectedCountryCode(value);
+
+            if (!isOpen) {
+              setOpenSection(index);
+            }
+          }}
+          className="h-12 w-full appearance-none border border-black/15 bg-white pl-12 pr-10 text-sm font-bold text-[#0A1414] outline-none transition focus:border-[#C8EB00] focus:ring-2 focus:ring-[#C8EB00]/20"
+        >
+          {countries.map((country) => (
+            <option key={country.code} value={country.code}>
+              {country.name}
+            </option>
+          ))}
+        </select>
+
+        <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2" />
+      </div>
+
+      <button
+        type="button"
+        aria-label={
+          isOpen
+            ? "Close entry requirements"
+            : "Open entry requirements"
+        }
+        onClick={() => setOpenSection(isOpen ? -1 : index)}
+        className="flex h-12 w-12 shrink-0 items-center justify-center  text-black"
+      >
+        <ChevronDown
+          className={`h-5 w-5 transition-transform duration-300 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
+      </button>
     </div>
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
+  ) : (
+    <button
+      type="button"
+      onClick={() => setOpenSection(isOpen ? -1 : index)}
+      className="mx-4 mb-4 flex h-12 w-12 shrink-0 self-end items-center justify-center  text-black md:mx-5 md:mb-0 md:self-auto"
+    >
+      <ChevronDown
+        className={`h-5 w-5 transition-transform duration-300 ${
+          isOpen ? "rotate-180" : ""
+        }`}
+      />
+    </button>
+  )}
+</div>
+
+        <AnimatePresence initial={false}>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.35, ease: "easeInOut" }}
+              className="overflow-hidden"
+            >
+              <div className="bg-white p-6 md:p-8">
+                {isEntryCriteria ? (
+                  /* COUNTRY-SPECIFIC ENTRY REQUIREMENTS */
+                  <div>
+                    <div className="mb-7 flex flex-col gap-4 border-b border-black/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#829b00]">
+                          {selectedCountry.flag} Requirements for{" "}
+                          {selectedCountry.name}
+                        </p>
+
+                        <h3 className="font-garage mt-2 text-[28px] font-black uppercase leading-none text-[#0A1414] sm:text-[34px]">
+                          {requirementType === "undergraduate" &&
+                            "Undergraduate Entry Requirements"}
+
+                          {requirementType === "foundation" &&
+                            "Foundation Entry Requirements"}
+
+                          {requirementType === "postgraduate" &&
+                            "Master’s Entry Requirements"}
+
+                          {requirementType === "pre-masters" &&
+                            "Integrated Pre-Master’s Requirements"}
+                        </h3>
+                      </div>
+
+                      {/* <span className="inline-flex w-fit bg-[#C8EB00] px-4 py-2 text-xs font-black uppercase tracking-[0.1em] text-[#0A1414]">
+                        {programme.title}
+                      </span> */}
                     </div>
-                  );
-                })}
+
+                    {relevantCountryRequirement ? (
+                      <div>
+                        {relevantCountryRequirement.description && (
+                          <p className="mb-6 max-w-4xl text-base leading-8 text-black/65">
+                            {relevantCountryRequirement.description}
+                          </p>
+                        )}
+
+                        {relevantCountryRequirement.items && (
+                          <ul className="space-y-3">
+                            {relevantCountryRequirement.items.map(
+                              (point, pointIndex) => (
+                                <li
+                                  key={`${selectedCountry.code}-${requirementType}-${pointIndex}`}
+                                  className="flex gap-3 border-b border-black/10 pb-4 text-black/70 last:border-b-0"
+                                >
+                                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center bg-[#C8EB00]">
+                                    <CheckCircle2 className="h-4 w-4 text-[#0A1414]" />
+                                  </span>
+
+                                  <span className="leading-7">{point}</span>
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        )}
+
+                        {relevantCountryRequirement.subsections && (
+                          <div className="space-y-7">
+                            {relevantCountryRequirement.subsections.map(
+                              (subsection, subsectionIndex) => (
+                                <div
+                                  key={`${subsection.title}-${subsectionIndex}`}
+                                  className="border-b border-black/10 pb-7 last:border-b-0"
+                                >
+                                  <h4 className="font-garage text-[24px] font-black uppercase text-[#0A1414]">
+                                    {subsection.title}
+                                  </h4>
+
+                                  {subsection.description && (
+                                    <p className="mt-3 leading-7 text-black/65">
+                                      {subsection.description}
+                                    </p>
+                                  )}
+
+                                  <ul className="mt-5 space-y-3">
+                                    {subsection.items.map(
+                                      (point, pointIndex) => (
+                                        <li
+                                          key={`${subsection.title}-${pointIndex}`}
+                                          className="flex gap-3 text-black/70"
+                                        >
+                                          <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#C8EB00]" />
+                                          <span className="leading-7">
+                                            {point}
+                                          </span>
+                                        </li>
+                                      )
+                                    )}
+                                  </ul>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <div className="border-l-4 border-[#C8EB00] bg-[#F7F7F2] p-5">
+                        <p className="leading-7 text-black/65">
+                          Requirements for this programme type are not currently
+                          available for {selectedCountry.name}. Please view the
+                          official UCA UK qualifications page.
+                        </p>
+                      </div>
+                    )}
+
+                    <div className="mt-8 flex flex-col gap-3 border-t border-black/10 pt-6 sm:flex-row">
+                      <Link
+                        href="/entry-requirements"
+                        className="font-garage group inline-flex items-center justify-center gap-3 bg-[#C8EB00] px-7 py-4 text-[16px] font-black uppercase text-[#0A1414] transition hover:bg-[#0A1414] hover:text-[#C8EB00]"
+                      >
+                        View All Entry Requirements
+                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                      </Link>
+
+                      <Link
+                        href="https://admissions.uca.feuc.ae/enquiry_form"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-garage group inline-flex items-center justify-center gap-3 border border-[#0A1414] px-7 py-4 text-[16px] font-black uppercase text-[#0A1414] transition hover:bg-[#0A1414] hover:text-[#C8EB00]"
+                      >
+                        Ask Admissions
+                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                      </Link>
+                    </div>
+                  </div>
+                ) : typeof section.content === "string" ? (
+                  <p className="text-lg leading-8 text-black/70">
+                    {section.content}
+                  </p>
+                ) : (
+                  <div className="space-y-6">
+                    {Object.entries(section.content).map(
+                      ([heading, points]) => (
+                        <div key={heading}>
+                          <h3 className="font-garage text-[26px] font-black uppercase text-[#0A1414]">
+                            {heading}
+                          </h3>
+
+                          <ul className="mt-3 space-y-2">
+                            {points.map((point, pointIndex) => (
+                              <li
+                                key={`${heading}-${pointIndex}`}
+                                className="flex gap-3 text-black/70"
+                              >
+                                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#C8EB00]" />
+                                <span>{point}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )
+                    )}
+                  </div>
+                )}
               </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
+  })}
+</div>
             </div>
           </div>
         </section>

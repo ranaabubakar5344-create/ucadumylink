@@ -10,7 +10,7 @@ import {
 const socialLinks = [
   {
     icon: FaFacebookF,
-    href: "#",
+    href: "/ #",
     label: "Facebook",
   },
   {
