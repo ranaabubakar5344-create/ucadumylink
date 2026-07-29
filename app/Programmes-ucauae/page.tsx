@@ -200,7 +200,7 @@ export default function ProgrammesSection() {
 
                 {/* CONTENT */}
                 <div className="flex min-h-[265px] flex-1 flex-col p-6 sm:p-7">
-                  <h3 className="font-garage text-[28px] font-black uppercase leading-[0.95] tracking-[-0.03em] transition duration-300 group-hover:text-[#829B00] sm:text-[30px]">
+                  <h3 className="font-garage text-[28px] font-black uppercase leading-[0.95] tracking-[-0.03em] transition duration-300 group-hover:text-[#CBE800] sm:text-[30px]">
                     {item.title}
                   </h3>
 
@@ -210,7 +210,7 @@ export default function ProgrammesSection() {
 
                   <Link
                     href={item.href}
-                    className="font-garage mt-auto inline-flex items-center gap-3 pt-6 text-[17px] font-black uppercase text-[#0A1414] transition hover:text-[#829B00] sm:text-[18px]"
+                    className="font-garage mt-auto inline-flex items-center gap-3 pt-6 text-[17px] font-black uppercase text-[#0A1414] transition hover:text-[#CBE800] sm:text-[18px]"
                   >
                     Explore Programme
 
