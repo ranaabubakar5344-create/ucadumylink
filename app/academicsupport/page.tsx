@@ -83,7 +83,7 @@ export default function AcademicSupportPage() {
       <section className="bg-[#F7F7F2] py-20 md:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[38%_62%]">
           <div>
-            <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#8FB000]">
+            <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#CBE800]">
               Academic Support
             </p>
 
@@ -149,7 +149,7 @@ export default function AcademicSupportPage() {
       <section id="support" className="bg-white py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5">
           <div className="mb-12 max-w-4xl">
-            <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#8FB000]">
+            <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#CBE800]">
               What We Support
             </p>
 
