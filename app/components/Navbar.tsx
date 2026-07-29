@@ -143,20 +143,7 @@ PROGRAMMES: {
           },
         ],
       },
-      {
-        title: "Events",
-        lists: [
-          {
-            label: "What's On",
-            href: "#",
-            items: [
-              { label: "Workshops", href: "#" },
-              { label: "Open Day", href: "#" },
-              { label: "Performances", href: "#" },
-            ],
-          },
-        ],
-      },
+     
     ],
   },
 
@@ -173,32 +160,18 @@ PROGRAMMES: {
             href: "#",
             items: [
               { label: "Entry Requirements", href: "/entry-requirements" },
-              { label: "Dates & Deadlines", href: "#" },
-              { label: "Portfolio Guide", href: "#" },
+           
             ],
           },
         ],
       },
-      {
-        title: "Fees & Support",
-        lists: [
-          {
-            label: "Finance",
-            href: "/admissions/fees",
-            items: [
-              { label: "Tuition Fees", href: "#" },
-              { label: "Scholarships", href: "#" },
-              { label: "Payment Plans", href: "#" },
-            ],
-          },
-        ],
-      },
+    
     ],
   },
 
   "CONNECT & ENGAGE": {
     label: "CONNECT & ENGAGE",
-    href: "/connect-engage",
+    href: "#",
     image: "/indus.webp",
     columns: [
       {
@@ -220,7 +193,7 @@ PROGRAMMES: {
 
   "ABOUT US": {
     label: "ABOUT US",
-    href: "/about",
+    href: "#",
     image: "/about.jpg",
     columns: [
       {
@@ -228,7 +201,7 @@ PROGRAMMES: {
         lists: [
           {
             label: "About",
-            href: "/about",
+            href: "#",
             items: [
               { label: "About FEUC", href: "/about-feuc" },
               { label: "UCA UK", href: "/about-uca-uk" },
@@ -238,19 +211,7 @@ PROGRAMMES: {
           },
         ],
       },
-      {
-        title: "Our Team",
-        lists: [
-          {
-            label: "People",
-            href: "#",
-            items: [
-              { label: "CEO Message", href: "#" },
-              { label: "Faculty Members", href: "#" },
-            ],
-          },
-        ],
-      },
+    
     ],
   },
 };
