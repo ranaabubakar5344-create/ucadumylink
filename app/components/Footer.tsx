@@ -61,9 +61,9 @@ export default function Footer() {
             </h3>
 
             <div className="mt-5 space-y-3 text-sm text-white">
-              {[
-                "Computer Science",
+              {[ 
                 "Games Development",
+                
                 "Graphic Design",
                 "Business & Management",
                 "Visual Communication",
@@ -88,11 +88,11 @@ export default function Footer() {
             <div className="mt-5 space-y-3 text-sm text-white">
               {[
                 ["About UCA UAE", "/about-feuc"],
-                ["Admissions", "/#"],
-                ["Student Life", "/#"],
-                ["Scholarships", "/#"],
-                ["Apply Now", "https://admissions.uca.feuc.ae/registration"],
-                ["Contact", "/#"],
+                ["Entry Requirements", "/entry-requirements"],
+                ["Student Clubs", "/studentclubs"],
+                ["Policies & Regulations", "/policies"],
+                ["Enquire Now", "https://admissions.uca.feuc.ae/enquiry_form"],
+                ["Contact", " https://wa.me/971566761798"],
               ].map(([label, href]) => (
                 <Link key={label} href={href} className="block hover:text-[#C8EB00]">
                   {label}
