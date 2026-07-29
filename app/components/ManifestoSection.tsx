@@ -205,7 +205,7 @@ FEUC UAE, we empower the next
             transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
           >
             <Image
-              src="/ca.jpeg"
+              src="/ucab.jpeg"
               alt="UCA UAE Building"
               fill
               priority
