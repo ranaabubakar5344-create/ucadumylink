@@ -21,7 +21,7 @@ const differentiators = [
   },
   {
     icon: MapPin,
-    title: "Delivered in UAE",
+    title: "Delivered in Umm Al Quwain",
     description:
       "Study locally in UAE — a global hub for creativity, innovation, and professional opportunity.",
   },
@@ -80,7 +80,7 @@ export default function WhyChooseUsPage() {
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white">
               Shape your creative future with internationally recognised
-              programmes delivered in Dubai in partnership with the University
+              programmes delivered in Umm Al Quwain in partnership with the University
               for the Creative Arts.
             </p>
 
@@ -270,7 +270,7 @@ export default function WhyChooseUsPage() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#0A1414]/75">
-            Study locally in Dubai with internationally recognised creative
+            Study locally in Umm Al Quwain  with internationally recognised creative
             education designed for global opportunity.
           </p>
 
