@@ -41,7 +41,7 @@ export default function WelcomeUcaSection() {
   const stats = [
     {
       icon: GraduationCap,
-      number: "10+",
+      number: "9+",
       label: "Programmes",
       text: "Industry-focused creative degrees",
     },
@@ -60,7 +60,7 @@ export default function WelcomeUcaSection() {
       icon: Trophy,
       number: "95%",
       label: "Graduate Success",
-      text: "Successful careers start at UCA",
+      text: "Successful careers start at UCA UK",
     },
   ];
 

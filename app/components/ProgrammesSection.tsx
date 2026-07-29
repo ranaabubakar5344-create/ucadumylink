@@ -110,7 +110,7 @@ export default function ProgrammesSection() {
         >
           <div>
             <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#C8EB00]">
-              Study With UCA
+              Study With UCA UAE
             </p>
 
             <h2 className="font-garage mt-4 text-[58px] font-black uppercase leading-[1.0] tracking-[-0.05em] md:text-[92px]">
