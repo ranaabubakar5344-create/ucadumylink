@@ -21,9 +21,9 @@ const differentiators = [
   },
   {
     icon: MapPin,
-    title: "Delivered in Dubai",
+    title: "Delivered in UAE",
     description:
-      "Study locally in Dubai — a global hub for creativity, innovation, and professional opportunity.",
+      "Study locally in UAE — a global hub for creativity, innovation, and professional opportunity.",
   },
   {
     icon: Briefcase,
