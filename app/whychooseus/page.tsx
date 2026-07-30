@@ -73,7 +73,7 @@ export default function WhyChooseUsPage() {
             <h1 className="font-garage mt-5 text-[54px] font-black uppercase leading-[1.0] tracking-[-0.05em] md:text-[96px]">
               Why Choose
               <br />
-             UCA, delivered by FEUC 
+             UCA delivered by FEUC 
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white">
@@ -81,6 +81,7 @@ export default function WhyChooseUsPage() {
               programmes delivered in Umm Al Quwain in partnership with the University
               for the Creative Arts.
             </p>
+            
 
             <Link
               href="#why-uca"

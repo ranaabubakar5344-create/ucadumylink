@@ -13,7 +13,7 @@ import {
 const standoutCards = [
   {
     icon: Globe2,
-    title: "Why Choose FEUC?",
+    title: "Why Choose UCA delivered by FEUC?",
     text: "FEUC offers future-oriented education with programmes aligned to the needs of an evolving global landscape.",
   },
   {
@@ -24,13 +24,15 @@ const standoutCards = [
   {
     icon: MapPin,
     title: "Strategic Location",
-    text: "Located in the UAE, FEUC connects students with international opportunities and regional industry access.",
+    text: "Located in the emirate of umm al quwain in UAE , UCA delivered by FEUC connects students with international opportunities and regional industry access.",
   },
   {
     icon: Lightbulb,
+    
     title: "UAQ FTZ Advantage",
     text: "Being part of UAQ FTZ supports innovation, accessibility and connection to wider business opportunities.",
   },
+  
 ];
 
 export default function AboutPage() {
@@ -40,14 +42,11 @@ export default function AboutPage() {
         <div className="absolute inset-0 opacity-[0.08] bg-[radial-gradient(circle,#C8EB00_2px,transparent_2px)] bg-[size:28px_28px]" />
 
         <div className="relative mx-auto max-w-7xl px-5 pt-14 pb-20 md:pt-20 md:pb-28">
-          <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#C8EB00]">
-            About FEUC
-          </p>
-
-          <h1 className="font-garage mt-4 max-w-6xl text-[54px] font-black uppercase leading-[1.1] tracking-[-0.05em] md:text-[104px]">
-            Future Education
-            <br />
-            University College
+      
+          <h1 className="font-garage mt-4 max-w-6xl text-[54px] font-black uppercase leading-[1.1] tracking-[-0.05em] md:text-[65px]">
+  University for the creative arts  (UCA)  delivered by      
+      <br />
+Future Education University College (FEUC) 
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-white">
@@ -55,13 +54,7 @@ export default function AboutPage() {
             in the heart of the UAE.
           </p>
 
-          <Link
-            href="#about-feuc"
-            className="font-garage mt-8 inline-flex items-center gap-4 bg-[#C8EB00] px-8 py-4 text-[18px] font-black uppercase text-[#0A1414] transition hover:bg-white"
-          >
-            Discover FEUC
-            <ArrowRight className="h-5 w-5" />
-          </Link>
+        
         </div>
       </section>
 
@@ -73,8 +66,6 @@ export default function AboutPage() {
             </p>
 
             <h2 className="font-garage mt-4 text-[54px] font-black uppercase leading-[1.0] tracking-[-0.05em] md:text-[82px]">
-              Prestige,
-              <br />
               Innovation
               <br />
               And Creative
@@ -85,13 +76,13 @@ export default function AboutPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black">
             <p>
-              Future Education University College is bringing a legacy of
-              prestige, innovation, and creative excellence to the heart of the
+             University for the creative arts (UCA) delivered by Future Education University College (FEUC) is bringing a legacy of
+             innovation, and creative excellence to the heart of the
               Middle East.
             </p>
 
             <p>
-              FEUC is more than an academic institution — it is a global hub of
+         University for the creative arts (UCA) delivered by Future Education University College (FEUC) is more than an academic institution — it is a global hub of
               inspiration where students from diverse backgrounds embark on an
               extraordinary educational journey.
             </p>
@@ -110,7 +101,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-5">
           <div className="mb-12 max-w-4xl">
             <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#C8EB00]">
-              Why FEUC Stands Out
+              Why UCA delivered by FEUC Stands Out
             </p>
 
             <h2 className="font-garage mt-4 text-[54px] font-black uppercase leading-[1.0] tracking-[-0.05em] md:text-[82px]">
@@ -133,7 +124,7 @@ export default function AboutPage() {
                 >
                   <Icon className="h-10 w-10 text-[#C8EB00]" />
 
-                  <h3 className="font-garage mt-6 text-[36px] font-black uppercase leading-[0.95]">
+                  <h3 className="font-garage mt-6 text-[32px] font-black uppercase leading-[0.95]">
                     {item.title}
                   </h3>
 
@@ -164,7 +155,7 @@ export default function AboutPage() {
           <div className="space-y-5">
             {[
               "Ultramodern classrooms with digital technologies",
-              "Expansive libraries and academic resources",
+              "Central Hub-libraries , quiet zones, digital learning space and academic resources",
               "High-tech creative labs and collaborative spaces",
               "Learning environments designed to ignite curiosity and bold ideas",
             ].map((item) => (
@@ -193,14 +184,15 @@ export default function AboutPage() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#0A1414]">
-            At FEUC, students connect with employers, gain industry insights,
+            At  UCA delivered by FEUC, students connect with employers, gain industry insights,
             and thrive in a global market. International students also benefit
             from simplified visa support for an easier transition to studying in
             the UAE.
           </p>
 
           <Link
-            href="/contact"
+             href={`https://wa.me/${971566761798}`}
+             target="blank"
             className="font-garage mt-10 inline-flex items-center gap-4 bg-[#0A1414] px-9 py-4 text-[18px] font-black uppercase text-[#C8EB00] transition hover:bg-white hover:text-[#0A1414]"
           >
             Contact Us

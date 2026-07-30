@@ -169,16 +169,41 @@ PROGRAMMES: {
     ],
   },
 
-  "CONNECT & ENGAGE": {
-    label: "CONNECT & ENGAGE",
+
+
+  SCHOLARSHIPS: {
+    label: "SCHOLARSHIPS",
+    href: "#",
+    image: "/adm.webp",
+    columns: [
+      {
+        title: "",
+        lists: [
+          {
+            label: "FIND SCHOLARSHIPS",
+            href: "#",
+            items: [
+              { label: "SCHOLARSHIPS", href: "/scholarships" },
+           
+            ],
+          },
+        ],
+      },
+    
+    ],
+  },
+
+
+  "CONNECT": {
+    label: "CONNECT",
     href: "#",
     image: "/indus.webp",
     columns: [
       {
-        title: "Connect & Engage",
+        title: "",
         lists: [
           {
-            label: "Connect",
+            label: "CONNECT",
             href: "/industry/partnerships",
             items: [
               { label: "School Partnerships", href: "/schoolpatnership" },
@@ -219,7 +244,10 @@ const navItems: NavItem[] = [
   { label: "PROGRAMMES", href: "#", display: <>PROGRAMMES</> },
   { label: "EXPERIENCE", href: "#" },
   { label: "ADMISSIONS", href: "#" },
-  { label: "CONNECT & ENGAGE", href: "#" },
+  { label: "SCHOLARSHIPS", href: "#" },
+
+  { label: "CONNECT", href: "#" },
+
   { label: "ABOUT US", href: "#", display: <>ABOUT US</> },
 ];
 
@@ -252,8 +280,7 @@ function DesktopMegaNav({
   scheduleClose: () => void;
 }) {
   return (
-    <nav className="hidden lg:flex items-center gap-7 xl:gap-9 whitespace-nowrap">
-      {navItems.map((item) => {
+<nav className="hidden w-full items-center justify-between gap-3 whitespace-nowrap lg:flex xl:gap-5">      {navItems.map((item) => {
         const isOpen = openKey === item.label;
 
         return (
@@ -529,20 +556,20 @@ useEffect(() => {
       : "relative"
   }`}
 >  <div className="bg-[#0A1414] relative border-b border-[#C8EB00]">
-<div className="mx-auto max-w-7xl px-2 xl:px-0">
-                  <div className="h-[92px] md:h-[104px] flex items-center gap-6">
-<Link href="/" className="flex-shrink-0 -ml-4 xl:-ml-6">
-  <Image
+<div className="mx-auto w-full max-w-[1500px] px-4 lg:px-6">          
+         <div className="flex h-[92px] min-w-0 items-center gap-4 md:h-[104px]">
+<Link href="/" className="w-[210px] shrink-0 xl:w-[235px]">  
+<Image
     src="/logo2.png"
     alt="UCA Logo"
     width={260}
     height={80}
     className="object-contain"
   />
+  
 </Link>
 
-                <div className="hidden lg:flex flex-1 items-center justify-start pl-6 min-w-0">
-                  <DesktopMegaNav
+<div className="hidden min-w-0 flex-1 items-center justify-start pl-2 lg:flex xl:pl-4">                  <DesktopMegaNav
                     openKey={openKey}
                     setOpenKey={setOpenKey}
                     cancelClose={cancelClose}

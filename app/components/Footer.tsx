@@ -62,16 +62,14 @@ export default function Footer() {
 
             <div className="mt-5 space-y-3 text-sm text-white">
               {[ 
-                "Integrated Foundation Year",
-                "BSc (Hons) Computer Science",
-                "BSc (Hons) Games Development",
-                "BA (Hons) Graphic Design",
-                "BA (Hons) Visual Communication",
-                "Master of Business Administration",
+                "Undergraduate Programmes",
+                "Postgraduate Programmes",
+                "Foundation & Pre-Master's Programmes",
+             
               ].map((item) => (
                 <Link
                   key={item}
-                  href="#"
+                  href="/Programmes-ucauae"
                   className="block hover:text-[#C8EB00]"
                 >
                   {item}
@@ -87,7 +85,7 @@ export default function Footer() {
 
             <div className="mt-5 space-y-3 text-sm text-white">
               {[
-                ["About UCA UAE", "/about-feuc"],
+                ["About UCA UAE", "/whychooseus"],
                 ["Entry Requirements", "/entry-requirements"],
                 ["Student Clubs", "/studentclubs"],
                 ["Policies & Regulations", "/policies"],

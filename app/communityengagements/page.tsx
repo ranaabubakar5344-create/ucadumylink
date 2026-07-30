@@ -17,7 +17,7 @@ const creativeProjects = [
   {
     icon: Paintbrush,
     title: "Public Art & Design",
-    text: "Transforming local spaces with murals, interactive displays, and digital storytelling projects.",
+    text: "Supporting community engagement through applied learning, real-world experiences, innovation, creativity, and meaningful cultural contributions across the UAE.",
   },
   {
     icon: Gamepad2,
@@ -171,9 +171,7 @@ export default function CommunityEngagementPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-white">
-              UCA@FEUC collaborates with schools, local councils, creative
-              organisations, and charities to co-create projects that inspire
-              creativity and spark change.
+             UCA@FEUC partners with schools, government entities, creative organisations, and community stakeholders to develop projects that foster creativity, innovation, and positive community impact.
             </p>
           </div>
 
