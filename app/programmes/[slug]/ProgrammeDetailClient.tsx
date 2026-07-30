@@ -518,7 +518,7 @@ const relevantCountryRequirement = getRelevantCountryRequirement();
                     <div>
                       {/* SELECTED COUNTRY HEADING */}
                       <div className="mb-7 border-b border-black/10 pb-6">
-                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#829B00]">
+                        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#CBE800]">
                           {selectedCountry.flag} Requirements for{" "}
                           {selectedCountry.name}
                         </p>
