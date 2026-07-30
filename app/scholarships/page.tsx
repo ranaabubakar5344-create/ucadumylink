@@ -87,7 +87,7 @@ export default function ScholarshipsPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
             <div>
-              <p className="font-neue text-xs font-bold uppercase tracking-[0.28em] text-[#829B00]">
+              <p className="font-neue text-xs font-bold uppercase tracking-[0.28em] text-[#CBE800]">
                 Scholarship Opportunity
               </p>
 
@@ -110,7 +110,7 @@ export default function ScholarshipsPage() {
 
               <div className="mt-9 grid gap-5 sm:grid-cols-2">
                 <div className="border border-black/10 bg-[#F7F7F2] p-6">
-                  <Percent className="h-9 w-9 text-[#829B00]" />
+                  <Percent className="h-9 w-9 text-[#CBE800]" />
 
                   <p className="font-garage mt-5 text-[28px] font-black uppercase leading-none">
                     Up To 50%
@@ -143,7 +143,7 @@ export default function ScholarshipsPage() {
       <section className="bg-[#F7F7F2] py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-12 max-w-4xl">
-            <p className="font-neue text-xs font-bold uppercase tracking-[0.28em] text-[#829B00]">
+            <p className="font-neue text-xs font-bold uppercase tracking-[0.28em] text-[#CBE800]">
               Scholarship Criteria
             </p>
 
@@ -182,7 +182,7 @@ export default function ScholarshipsPage() {
                     <Icon className="h-7 w-7" />
                   </div>
 
-                  <p className="font-neue mt-7 text-xs font-bold uppercase tracking-[0.2em] text-[#829B00]">
+                  <p className="font-neue mt-7 text-xs font-bold uppercase tracking-[0.2em] text-[#CBEB00]">
                     0{index + 1}
                   </p>
 
