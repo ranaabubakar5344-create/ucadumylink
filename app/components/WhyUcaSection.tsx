@@ -68,7 +68,7 @@ export default function AboutUcaSection() {
               viewport={{ once: true }}
               className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#C8EB00]"
             >
-              About UCA UAE
+              About UCA  Delivered By FEUC UAE
             </motion.p>
 
             <motion.h2
@@ -86,7 +86,7 @@ export default function AboutUcaSection() {
             </motion.h2>
 
             <p className="mt-7 max-w-2xl font-neue text-lg leading-8 text-white">
-              UCA UAE is designed for students who want to turn creativity into
+             UCA  Delivered By FEUC UAE is designed for students who want to turn creativity into
               opportunity. Through future-focused programmes, practical learning
               and a supportive international environment, students develop the
               skills and confidence to shape their creative careers.
