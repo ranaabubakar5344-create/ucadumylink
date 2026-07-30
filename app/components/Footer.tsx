@@ -62,11 +62,11 @@ export default function Footer() {
 
             <div className="mt-5 space-y-3 text-sm text-white">
               {[ 
-                "Games Development",
-                
-                "Graphic Design",
-                "Business & Management",
-                "Visual Communication",
+                "Integrated Foundation Year",
+                "BSc (Hons) Computer Science",
+                "BSc (Hons) Games Development",
+                "BA (Hons) Graphic Design",
+                "BA (Hons) Visual Communication",
                 "Master of Business Administration",
               ].map((item) => (
                 <Link

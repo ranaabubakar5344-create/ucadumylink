@@ -12,37 +12,22 @@ import {
   Rocket,
   HeartHandshake,
   CheckCircle2,
+  Cpu,
+  Code2
 } from "lucide-react";
 
-const clubs = [
-  "UCA Creative Collective – collaborative projects and exhibitions",
-  "Film & Media Society – produce, critique and explore cinema",
-  "Photography & Visual Storytelling Club – capture campus life",
-  "Fashion & Textile Forum – design, create and showcase ideas",
-  "Animation & Motion Graphics Guild – 2D and 3D animation",
-  "Digital Arts Lab – interactive and digital media projects",
-  "Theatre & Performance Workshop – plays, improv and showcases",
-  "UCA Soundscape Ensemble – collaborate musically",
-  "Dance & Movement Collective – express through movement",
-  "Debates & Dialogue Society – critical thinking and discussion",
-  "Creative Writing & Zine Club – write, publish and share",
-  "Global Voices Cultural Club – celebrate cultural diversity",
-  "Model UCA Nations (MUN) – leadership and diplomacy",
-  "Innovation & Design Thinkers Hub – creative solutions",
-  "Sustainability & Green Futures Club – greener campus initiatives",
-  "Entrepreneurship & Startup Society – bring ideas to life",
-  "Game & eSports Lounge – compete, play and connect",
-  "Campus Wellbeing Circle – wellness and mindfulness",
-  "Food & Culture Club – explore cuisines and events",
-];
 
 const featured = [
-  { icon: Palette, title: "Creative Collective" },
-  { icon: Film, title: "Film & Media" },
-  { icon: Camera, title: "Photography" },
-  { icon: Shirt, title: "Fashion Forum" },
-  { icon: Gamepad2, title: "eSports Lounge" },
-  { icon: Leaf, title: "Green Futures" },
+  { icon: Gamepad2, title: "Gaming CLUB" },
+  { icon: Code2, title: "CODE PLAY COLLECTIVE " },
+  // { icon: Users, title: "Club Collective" },
+  { icon: Rocket, title: "BUSINESS &  INCUBATION" },
+  { icon: Palette, title: "CREATIVERSE" },
+  { icon: Cpu, title: "Computing & Technology" },
+    { icon: Cpu, title: "ART & DESIGN" },
+        { icon: Cpu, title: "UCA CONNECT" },
+
+
 ];
 
 export default function StudentLifePage() {
@@ -59,7 +44,7 @@ export default function StudentLifePage() {
           <h1 className="font-garage mt-4 max-w-6xl text-[54px] font-black uppercase leading-[1.1] tracking-[-0.05em] md:text-[104px]">
             Student Life
             <br />
-            At UCA FEUC
+            At UCA delivered by FEUC 
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white">
@@ -94,7 +79,7 @@ export default function StudentLifePage() {
 
           <div className="space-y-6 text-lg leading-8 text-black">
             <p>
-              UCA.FEUC offers a vibrant student life where creativity,
+              University for the creative arts (UCA) , delivered by Future Education University College (FEUC), offers a vibrant student life where creativity,
               collaboration, and community come together. Students can join a
               variety of clubs, societies, and activities to explore their
               interests, meet new friends, and make the most of their university
@@ -148,18 +133,6 @@ export default function StudentLifePage() {
             })}
           </div>
 
-          <div className="mt-12 border border-black/10 bg-[#F7F7F2] p-6 md:p-8">
-            <div className="grid gap-4 md:grid-cols-2">
-              {clubs.map((item) => (
-                <div key={item} className="flex gap-3 border-b border-black/10 pb-4">
-                  <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#C8EB00]" />
-                  <p className="text-sm leading-7 text-black/70 md:text-base">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 

@@ -519,10 +519,10 @@ const countries: CountryRequirements[] = [
 const sectionIcons = [GraduationCap, School, BookOpen];
 
 export default function EquivalentQualificationsPage() {
-  const [selectedCode, setSelectedCode] = useState("PK");
+  const [selectedCode, setSelectedCode] = useState("");
 
   const selectedCountry =
-    countries.find((country) => country.code === selectedCode) ?? countries[0];
+    countries.find((country) => country.code === selectedCode) ?? null;
 
   return (
     <main className="overflow-x-hidden bg-[#F7F7F2] text-[#0A1414]">
@@ -569,38 +569,50 @@ export default function EquivalentQualificationsPage() {
                 </p>
               </div>
 
-              <div className="relative">
-               <select
-  value={selectedCode}
-  onChange={(event) => {
-    const value = event.target.value;
+             <div className="relative">
+  <select
+    value={selectedCode}
+    onChange={(event) => {
+      const value = event.target.value;
 
-    if (value === "OTHER") {
-      window.location.href =
-        "https://www.uca.ac.uk/international/equivalent-qualifications/";
-      return;
-    }
+      if (value === "OTHER") {
+        window.location.href =
+          "https://www.uca.ac.uk/international/equivalent-qualifications/";
+        return;
+      }
 
-    setSelectedCode(value);
-  }}
-  className="h-16 w-full appearance-none border border-black/15 bg-[#f4f5ef] px-5 pr-14 text-base font-bold outline-none transition focus:border-[#C8EB00] focus:ring-4 focus:ring-[#C8EB00]/20"
->
-  {countries.map((country) => (
-    <option key={country.code} value={country.code}>
-      {country.flag} {country.name}
+      setSelectedCode(value);
+    }}
+    className="h-16 w-full appearance-none border border-black/15 bg-[#f4f5ef] pl-4 pr-11 text-[14px] font-bold text-[#0A1414] outline-none transition sm:pl-5 sm:pr-14 sm:text-base focus:border-[#C8EB00] focus:ring-4 focus:ring-[#C8EB00]/20"
+  >
+    <option value="" disabled>
+      Select your country
     </option>
-  ))}
-</select>
 
-                <ChevronDown className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2" />
-              </div>
+    {countries.map((country) => (
+      <option key={country.code} value={country.code}>
+        {country.flag} {country.name}
+      </option>
+    ))}
+  </select>
+
+  <ChevronDown className="pointer-events-none absolute right-4 top-8 h-5 w-5 -translate-y-1/2 sm:right-5" />
+
+  {!selectedCode && (
+    <p className="mt-3 text-sm leading-6 text-black/55">
+      Select your country to see your academic and English-language entry
+      requirements.
+    </p>
+  )}
+</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* SELECTED COUNTRY */}
-      <section className="py-16 md:py-24">
+      {selectedCountry ? (
+        <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-14 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
@@ -831,7 +843,31 @@ export default function EquivalentQualificationsPage() {
             </a>
           </div>
         </div>
-      </section>
+        </section>
+      ) : (
+        <section className="py-16 md:py-24">
+          <div className="mx-auto max-w-7xl px-5 sm:px-8">
+            <div className="border border-black/10 bg-white px-6 py-16 text-center shadow-[0_20px_65px_rgba(10,20,20,0.08)] sm:px-10 md:py-24">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center bg-[#C8EB00] text-[#0A1414]">
+                <GraduationCap className="h-8 w-8" />
+              </div>
+
+              <p className="font-neue mt-7 text-xs font-bold uppercase tracking-[0.25em] text-[#829B00]">
+                Country Requirements
+              </p>
+
+              <h2 className="font-garage mx-auto mt-4 max-w-3xl text-[36px] font-black uppercase leading-[1] tracking-[-0.04em] text-[#0A1414] sm:text-[48px] md:text-[60px]">
+                Select Your Country To See Your Requirements
+              </h2>
+
+              <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-black/60 md:text-lg">
+                Choose your country from the dropdown above to view the relevant
+                academic and English-language entry requirements.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
     </main>
   );
 }

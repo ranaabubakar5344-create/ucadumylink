@@ -691,7 +691,7 @@ const relevantCountryRequirement = getRelevantCountryRequirement();
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#0A1414]/75">
-            Join UCA UAE and start building your creative future with
+            Join University for the creative arts delivered by FEUC and start building your creative future with
             confidence.
           </p>
 
@@ -704,13 +704,7 @@ const relevantCountryRequirement = getRelevantCountryRequirement();
               <ArrowRight className="h-5 w-5" />
             </Link>
 
-            <Link
-              href="#"
-              className="font-garage inline-flex items-center gap-4 border border-[#0A1414] px-10 py-5 text-[18px] font-black uppercase text-[#0A1414] transition hover:bg-[#0A1414] hover:text-[#C8EB00]"
-            >
-              Request Information
-              <ArrowRight className="h-5 w-5" />
-            </Link>
+           
           </div>
         </div>
       </section>

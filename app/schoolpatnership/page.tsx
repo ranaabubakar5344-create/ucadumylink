@@ -23,10 +23,10 @@ const creativeLabs = [
 ];
 
 const creativeMondays = [
-  "Live design sprints and tutorials",
-  "Game jams and interactive storytelling",
-  "Panel talks with industry leaders in animation, UX/UI, and digital media",
-  "Workshops on emerging tech like AR, VR, and AI in creative practice",
+  "Interactive workshops led by academics and industry professionals",
+  " Seminars exploring creativity, innovation, and emerging technologies",
+  "AI, design thinking, and digital skills development",
+  "Professional development, networking opportunities, and portfolio enhancement",
 ];
 
 export default function SchoolPartnershipPage() {
@@ -48,7 +48,7 @@ export default function SchoolPartnershipPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-white">
-            UCA actively collaborates with local schools to provide students
+        University for the creative arts (UCA)  delivered by Future Education University College (FEUC) actively collaborates with local schools to provide students
             with enriching educational experiences, fostering a strong
             connection between the university and the community.
           </p>
@@ -82,8 +82,7 @@ export default function SchoolPartnershipPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black">
             <p>
-              High school is just the beginning — at University for the Creative
-              Arts@FEUC, we help students unlock their creative potential and
+              High school is just the beginning — at University for the creative arts (UCA) delivered by Future Education University College (FEUC), we help students unlock their creative potential and
               prepare for a future in design, media, games, and technology.
             </p>
 
@@ -153,9 +152,9 @@ export default function SchoolPartnershipPage() {
       <section className="bg-[#0A1414] py-20 text-white md:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[36%_64%]">
           <div>
-            <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#C8EB00]">
+            {/* <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#C8EB00]">
               Creative Mondays
-            </p>
+            </p> */}
 
             <h2 className="font-garage mt-4 text-[54px] font-black uppercase leading-[1.1] tracking-[-0.05em] md:text-[82px]">
               Inspiration
@@ -164,8 +163,8 @@ export default function SchoolPartnershipPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-white/65">
-              A weekly online series for students, educators, and creative
-              professionals exploring the latest in arts and technology.
+            Throughout the academic year, students have opportunities to participate in a range of creative and engaging learning experiences designed to inspire innovation, build practical skills, and connect with industry developments and emerging trends.
+.
             </p>
           </div>
 
@@ -202,11 +201,11 @@ export default function SchoolPartnershipPage() {
             </p>
 
             <h2 className="font-garage mt-4 text-[54px] font-black uppercase leading-[1.1] tracking-[-0.05em] md:text-[82px]">
-              Built For
+              Building opportunities 
               <br />
-              Schools And
+           for   Schools   
               <br />
-              Students
+         and     Communities
             </h2>
           </div>
 
@@ -220,7 +219,7 @@ export default function SchoolPartnershipPage() {
               {
                 icon: Users,
                 title: "Community Connection",
-                text: "Schools connect with UCA through talks, workshops and student engagement activities.",
+                text: "Schools connect with UCA delivered by FEUC through talks, workshops and student engagement activities.",
               },
               {
                 icon: Sparkles,
@@ -270,7 +269,7 @@ export default function SchoolPartnershipPage() {
 
           <div>
             <p className="text-lg leading-8 text-[#0A1414]/75">
-              Schools can book workshops with UCA to help students explore
+              Schools can book workshops with UCA delivered by FEUC to help students explore
               creative subjects, university pathways and future opportunities.
             </p>
 

@@ -68,14 +68,12 @@ export default function WhyChooseUsPage() {
 
         <div className="relative mx-auto flex min-h-[640px] max-w-7xl items-center px-5 py-24">
           <div className="max-w-4xl">
-            <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#C8EB00]">
-              About FEUC
-            </p>
+       
 
             <h1 className="font-garage mt-5 text-[54px] font-black uppercase leading-[1.0] tracking-[-0.05em] md:text-[96px]">
               Why Choose
               <br />
-              UCA FEUC
+             UCA, delivered by FEUC 
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white">
@@ -100,7 +98,7 @@ export default function WhyChooseUsPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[38%_62%]">
           <div>
             <p className="font-neue text-sm font-bold uppercase tracking-[0.3em] text-[#C8EB00]">
-              Why Choose UCA
+              Why Choose UCA, delivered by FEUC
             </p>
 
             <h2 className="font-garage mt-4 text-[54px] font-black uppercase leading-[1.1] tracking-[-0.05em] md:text-[82px]">
@@ -116,14 +114,12 @@ export default function WhyChooseUsPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black/70">
             <p>
-              FEUC operates as a higher education provider committed to
-              delivering rigorous academic programmes in partnership with
-              internationally recognised institutions.
+             UCA, delivered by Future Education University College (FEUC), offers internationally recognised UK degree programmes designed to foster creativity, innovation, and academic excellence.
+
             </p>
 
             <p>
-              Our programmes are structured to meet global standards while
-              responding to the professional and cultural context of the UAE.
+           Our programmes are awarded by the University for the Creative Arts (UCA), UK, and are delivered in the UAE through FEUC, combining globally recognised education with the professional and cultural context of the UAE.
             </p>
           </div>
         </div>
@@ -140,7 +136,7 @@ export default function WhyChooseUsPage() {
             <h2 className="font-garage mt-4 text-[54px] font-black uppercase leading-[1.1] tracking-[-0.05em] md:text-[82px]">
               What Sets
               <br />
-              UCA FEUC
+            UCA delivered by FEUC
               <br />
               Apart
             </h2>
@@ -190,7 +186,7 @@ export default function WhyChooseUsPage() {
 
           <div className="space-y-5">
             <p className="text-lg leading-8 text-white">
-              FEUC maintains a strong academic framework supported by
+            University for the creative arts delivered by FEUC maintains a strong academic framework supported by
               experienced faculty, structured assessment, and continuous
               academic guidance. Students receive dedicated support throughout
               their academic journey.

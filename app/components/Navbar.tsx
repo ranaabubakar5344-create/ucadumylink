@@ -182,7 +182,6 @@ PROGRAMMES: {
             href: "/industry/partnerships",
             items: [
               { label: "School Partnerships", href: "/schoolpatnership" },
-              { label: "Agent Partnerships", href: "/agentpartnerships" },
               { label: "Community Engagements", href: "/communityengagements" },
             ],
           },

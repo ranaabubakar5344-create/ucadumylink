@@ -44,7 +44,7 @@ export default function AboutUcaSection() {
           >
             <div className="relative h-[520px] overflow-hidden border border-[#C8EB00]/30">
               <Image
-                src="/ucab.jpeg"
+                src="/CampusFront.jpg"
                 alt="About UCA UAE"
                 fill
                 className="object-cover"

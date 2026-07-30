@@ -8,7 +8,7 @@ export default function ScholarshipSection() {
     <section className="relative overflow-hidden bg-[#0A1414] text-white">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/ucab.jpeg')" }}
+        style={{ backgroundImage: "url('/CampusFront.jpg')" }}
       />
 
       <div className="absolute inset-0 bg-[#0A1414]/50" />

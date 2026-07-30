@@ -8,7 +8,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47,775",
+    fees: "AED 47775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/co.jpg",
@@ -49,7 +49,7 @@ export const PROGRAMME_DETAILS = {
       {
         title: "Fees",
         content:
-          "AED 47,775 per year (VAT Inclusive). Scholarships and grants may be available for eligible students."
+          "AED 47,775 per year (inclusive 5% VAT). Scholarships and grants may be available for eligible students."
       },
      
     ],
@@ -108,7 +108,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47,775 (VAT Inclusive)",
+    fees: "AED 47775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/graa.jpg",
@@ -162,9 +162,9 @@ export const PROGRAMME_DETAILS = {
       {
         title: "Fees",
         content:
-          "AED 47,775 per year (VAT Inclusive). Scholarships and grants may be available for eligible students."
+          "AED 47,775 per year (inclusive 5% VAT). Scholarships and grants may be available for eligible students."
       },
-     
+    
     ],
 
     modules: [
@@ -226,7 +226,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47,775 (VAT Inclusive)",
+    fees: "AED 47775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/buise.jpg",
@@ -286,7 +286,7 @@ export const PROGRAMME_DETAILS = {
       {
         title: "Fees",
         content:
-          "AED 47,775 per year (VAT Inclusive). Scholarships and financial support may be available for eligible students."
+          "AED 47,775 per year (inclusive 5% VAT). Scholarships and financial support may be available for eligible students."
       },
 
       // {
@@ -605,7 +605,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47,775 (VAT Inclusive)",
+    fees: "AED 47775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/games.jpg",
@@ -657,7 +657,7 @@ export const PROGRAMME_DETAILS = {
       {
         title: "Fees",
         content:
-          "AED 47,775 per year (VAT Inclusive). Scholarships and grants may be available for eligible students."
+          "AED 47,775 per year (inclusive 5% VAT). Scholarships and grants may be available for eligible students."
       },
       // {
       //   title: "Transfer Option",
@@ -715,7 +715,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47,775 (VAT Inclusive)",
+    fees: "AED 47775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/visal.webp",
@@ -767,9 +767,9 @@ export const PROGRAMME_DETAILS = {
       {
         title: "Fees",
         content:
-          "AED 47,775 per year (VAT Inclusive). Scholarships and grants may be available for eligible students."
+          "AED 47,775 per year  (inclusive 5% VAT). Scholarships and grants may be available for eligible students."
       },
-    
+
     ],
 
     modules: [
@@ -827,7 +827,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47,775 (VAT Inclusive)",
+    fees: "AED 47775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/dig.jpg",
@@ -878,7 +878,7 @@ export const PROGRAMME_DETAILS = {
       {
         title: "Fees",
         content:
-          "AED 47,775 per year (VAT Inclusive). Scholarships and grants may be available for eligible students."
+          "AED 47,775 per year  (inclusive 5% VAT). Scholarships and grants may be available for eligible students."
       },
    
     ],
@@ -932,7 +932,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 29,775 (VAT Inclusive)",
+    fees: "AED 29,775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/Law.webp",
@@ -983,7 +983,7 @@ export const PROGRAMME_DETAILS = {
       {
         title: "Fees",
         content:
-          "AED 29,775 per year (VAT Inclusive). Scholarships and grants may be available for eligible students."
+          "AED 29,775 per year (inclusive 5% VAT). Scholarships and grants may be available for eligible students."
       },
      
     ],
@@ -1017,7 +1017,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 29,775 (VAT Inclusive)",
+    fees: "AED 29,775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/compe.jpg",
@@ -1067,7 +1067,7 @@ export const PROGRAMME_DETAILS = {
       {
         title: "Fees",
         content:
-          "AED 29,775 per year (VAT Inclusive). Scholarships and grants may be available for eligible students."
+          "AED 29,775 per year (inclusive 5% VAT). Scholarships and grants may be available for eligible students."
       },
     
     ],
@@ -1119,7 +1119,7 @@ export const PROGRAMME_DETAILS = {
   studyMode: "Full Time",
 
   intake: ["September", "February", "June"],
-  fees: "AED 49,775 (VAT Inclusive)",
+  fees: "AED 49,775 (inclusive 5% VAT) ",
   awardingBody: "University for the Creative Arts (UCA), UK",
 
   heroImage: "/MBA.jpg",
@@ -1160,7 +1160,7 @@ export const PROGRAMME_DETAILS = {
     {
       title: "Fees",
       content:
-        "AED 49,775 (VAT Inclusive)."
+        "AED 49,775 (inclusive 5% VAT) ."
     }
   ],
 

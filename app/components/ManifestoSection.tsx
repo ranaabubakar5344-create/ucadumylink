@@ -47,13 +47,13 @@ export default function WelcomeUcaSection() {
     },
     {
       icon: Users,
-      number: "100–150",
+      number: "101–150",
       text: "QS World University Rankings by Subject (Art & Design)",
     },
     {
       icon: Globe2,
-      number: "86th",
-      label: "Ranked 86th in the UK",
+      number: "85th",
+      label: "Ranked 85th in the UK",
       text: "University League Table 2027",
     },
     {
@@ -205,7 +205,7 @@ FEUC UAE, we empower the next
             transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
           >
             <Image
-              src="/ucab.jpeg"
+              src="/CampusFront.jpg"
               alt="UCA UAE Building"
               fill
               priority

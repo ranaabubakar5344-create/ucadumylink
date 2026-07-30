@@ -114,7 +114,7 @@ export default function AcademicSupportPage() {
       <section className="bg-[#C8EB00] py-8 text-[#0A1414]">
         <div className="mx-auto grid max-w-7xl gap-5 px-5 md:grid-cols-2">
           <a
-            href="mailto:support@uca.feuc.ae"
+            href="mailto:studentsupport@uca.feuc.ae"
             className="group flex items-center gap-4 bg-[#0A1414] p-5 text-[#C8EB00] transition hover:bg-white hover:text-[#0A1414]"
           >
             <Mail className="h-7 w-7" />
@@ -123,7 +123,7 @@ export default function AcademicSupportPage() {
                 Email Us
               </p>
               <p className="font-garage mt-1 text-[26px] font-black uppercase">
-                support@uca.feuc.ae
+                studentsupport@uca.feuc.ae
               </p>
             </div>
           </a>
@@ -138,7 +138,7 @@ export default function AcademicSupportPage() {
                 Call Us
               </p>
               <p className="font-garage mt-1 text-[26px] font-black uppercase">
-                +97165300408
+                +971566761798
               </p>
             </div>
           </a>
@@ -264,12 +264,13 @@ export default function AcademicSupportPage() {
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#0A1414]/75">
             Your academic success is at the heart of what we do. Whether you
             need help with deadlines, planning your studies, or understanding
-            academic policies, the UCA at FEUC Academic Support team is here to
+            academic policies, the  University for the creative arts (UCA) , delivered by Future Education University College (FEUC), 
+            Academic Support team is here to
             ensure you receive the guidance and resources you need to thrive.
           </p>
 
           <Link
-            href="mailto:support@uca.feuc.ae"
+            href="mailto:studentsupport@uca.feuc.ae"
             className="font-garage mt-10 inline-flex items-center gap-4 bg-[#0A1414] px-9 py-4 text-[18px] font-black uppercase text-[#C8EB00] transition hover:bg-white hover:text-[#0A1414]"
           >
             Contact Support
