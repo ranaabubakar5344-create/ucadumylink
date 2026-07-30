@@ -82,7 +82,8 @@ export default function PoliciesPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black/70">
             <p>
-              University for the Creative Arts (UCA) is committed to maintaining
+              University for the Creative Arts (UCA) Delivered By
+FEUC UAE is committed to maintaining
               a safe, respectful, and professional academic environment for all
               members of its community.
             </p>

@@ -490,13 +490,535 @@ export const countries: CountryRequirements[] =  [
   ],
   
 },
+{
+  code: "BD",
+  name: "Bangladesh",
+  flag: "🇧🇩",
+  introduction:
+    "Select Bangladesh to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
+
+  sections: [
+    {
+      title: "Undergraduate Requirements",
+      description:
+        "For our Bachelor's courses, we usually require that you have either:",
+      items: [
+        "A Diploma in Engineering, Architecture, Medical Faculty, Medical Technology, Nursing Science or Midwifery with 60%.",
+        "Successful completion of two years of a Bachelor's degree with 60%.",
+      ],
+    },
+    {
+      title: "Foundation Year Requirements",
+      description:
+        "For our Integrated Foundation courses, we usually require:",
+      items: [
+        "A Bangladeshi Higher Secondary Certificate showing 12 years of completed school study, with 3.0 out of 5.0 or better.",
+        "For our International Foundation in Creative Practices and Integrated Foundation courses, five IGCSEs with grades 9–4 / A*–C may also be considered.",
+      ],
+    },
+    {
+      title: "Postgraduate Requirements",
+      subsections: [
+        {
+          title: "Integrated Pre-Master's Course",
+          description:
+            "For our Integrated Pre-Master's courses, applicants are normally expected to meet the following requirements:",
+          items: [
+            "A recognised Bachelor's degree or a three-year diploma.",
+            "A strong portfolio in a relevant subject.",
+            "Applicants must also meet any course-specific requirements.",
+          ],
+        },
+        {
+          title: "Master's Course",
+          description:
+            "For our Master's courses, we usually require that you have one of the following:",
+          items: [
+            "A four-year Bachelor's degree with 65% overall.",
+            "A three-year degree with 55% from NSU, BRAC University, IUB, East West University, AIUB, Bangladesh University of Professionals, BUET, or any government or private university recognised by the Bangladesh University Grants Commission.",
+          ],
+        },
+      ],
+    },
+  ],
+
+  englishRequirements: [
+    {
+      programme: "Undergraduate degree (BA / BSc / BMus)",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Undergraduate degree with Integrated Foundation Year",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "International Foundation in Creative Practices",
+      requirement: "IELTS 5.0 overall, with no section below 4.5",
+    },
+    {
+      programme: "Master's degree (MA / MSc / MArch)",
+      requirement: "IELTS 6.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 13 weeks",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 30 weeks",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Postgraduate Research (PhD / MPhil)",
+      requirement:
+        "IELTS 7.0 overall, with 7.0 in writing and no other section below 5.5",
+    },
+    {
+      programme: "Pre-Doctorate",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+  ],
+},
+{
+  code: "LK",
+  name: "Sri Lanka",
+  flag: "🇱🇰",
+  introduction:
+    "Select Sri Lanka to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
+
+  sections: [
+    {
+      title: "Undergraduate Requirements",
+      description:
+        "For our Bachelor's courses, we usually require that you have one of the following:",
+      items: [
+        "Grades BBC in Sri Lanka A Levels.",
+        "A recognised International Foundation course from a UK institution following a validated UK syllabus.",
+        "Successful completion of Year 1 of a Bachelor's degree from a recognised institution with at least 60%.",
+      ],
+    },
+    {
+      title: "Foundation Year Requirements",
+      description:
+        "For our Integrated Foundation courses, we usually require:",
+      items: [
+        "Five O Levels at Grade C.",
+        "For our International Foundation in Creative Practices and Integrated Foundation courses, five IGCSEs with grades 9–4 / A*–C may also be considered.",
+      ],
+    },
+    {
+      title: "Postgraduate Requirements",
+      subsections: [
+        {
+          title: "Integrated Pre-Master's Course",
+          description:
+            "For our Master's courses with an Integrated International Pre-Master's, we usually require:",
+          items: [
+            "Successful completion of a three-year or four-year Bachelor's degree from a recognised university, with 60% overall.",
+          ],
+        },
+        {
+          title: "Master's Course",
+          description:
+            "For our Master's courses, we usually require:",
+          items: [
+            "Successful completion of a four-year Bachelor's degree from a recognised university, with 65% overall.",
+          ],
+        },
+      ],
+    },
+  ],
+
+  englishRequirements: [
+    {
+      programme: "Sri Lanka O Level or A Level English",
+      requirement:
+        "For degree entry, Grade C in O Level English or A Level English Language and/or Literature.",
+    },
+    {
+      programme: "Undergraduate degree (BA / BSc / BMus)",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Undergraduate degree with Integrated Foundation Year",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "International Foundation in Creative Practices",
+      requirement: "IELTS 5.0 overall, with no section below 4.5",
+    },
+    {
+      programme: "Master's degree (MA / MSc / MArch)",
+      requirement: "IELTS 6.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 13 weeks",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 30 weeks",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Postgraduate Research (PhD / MPhil)",
+      requirement:
+        "IELTS 7.0 overall, with 7.0 in writing and no other section below 5.5",
+    },
+    {
+      programme: "Pre-Doctorate",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+  ],
+},
 
 {
-  code: "OTHER",
-  name: "Other Country",
-  flag: "🌍",
-  introduction: "",
-  sections: [],
-  englishRequirements: [],
+  code: "PS",
+  name: "Palestine",
+  flag: "🇵🇸",
+  introduction:
+    "Select Palestine to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
+
+  sections: [
+    {
+      title: "Undergraduate Requirements",
+      description:
+        "For our Bachelor's courses, we usually require that you have one of the following:",
+      items: [
+        "A transcript showing successful completion of one year of a Bachelor's degree from a recognised Palestinian university with 70%.",
+        "A Community College Diploma with 70%.",
+      ],
+    },
+    {
+      title: "Foundation Year Requirements",
+      description:
+        "For our Integrated Foundation courses, we usually require:",
+      items: [
+        "A General Secondary Education Certificate, Shahadat Al-Thanawaya Al-Aama, with at least 60%.",
+        "For our International Foundation in Creative Practices and Integrated Foundation courses, five IGCSEs with grades 9–4 / A*–C may also be considered.",
+      ],
+    },
+    {
+      title: "Postgraduate Requirements",
+      subsections: [
+        {
+          title: "Integrated Pre-Master's Course",
+          description:
+            "For our Integrated Pre-Master's courses, applicants are normally expected to meet the following requirements:",
+          items: [
+            "A recognised Bachelor's degree or a three-year diploma.",
+            "A strong portfolio in a relevant subject.",
+            "Applicants must also meet any course-specific requirements.",
+          ],
+        },
+        {
+          title: "Master's Course",
+          description:
+            "For our Master's courses, we usually require:",
+          items: [
+            "Successful completion of a Bachelor's degree at a recognised university.",
+          ],
+        },
+      ],
+    },
+  ],
+
+  englishRequirements: [
+    {
+      programme: "Undergraduate degree (BA / BSc / BMus)",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Undergraduate degree with Integrated Foundation Year",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "International Foundation in Creative Practices",
+      requirement: "IELTS 5.0 overall, with no section below 4.5",
+    },
+    {
+      programme: "Master's degree (MA / MSc / MArch)",
+      requirement: "IELTS 6.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 13 weeks",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 30 weeks",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Postgraduate Research (PhD / MPhil)",
+      requirement:
+        "IELTS 7.0 overall, with 7.0 in writing and no other section below 5.5",
+    },
+    {
+      programme: "Pre-Doctorate",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+  ],
+},
+{
+  code: "JO",
+  name: "Jordan",
+  flag: "🇯🇴",
+  introduction:
+    "Select Jordan to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
+
+  sections: [
+    {
+      title: "Undergraduate Requirements",
+      description:
+        "For our Bachelor's courses, we usually require:",
+      items: [
+        "A Community College Diploma or Associate Degree with a score of 60%.",
+      ],
+    },
+    {
+      title: "Foundation Year Requirements",
+      description:
+        "For our Integrated Foundation courses, we usually require:",
+      items: [
+        "A Tawjihi, or secondary school certificate, with a minimum score of 65%.",
+        "For our International Foundation in Creative Practices and Integrated Foundation courses, five IGCSEs with grades 9–4 / A*–C may also be considered.",
+      ],
+    },
+    {
+      title: "Postgraduate Requirements",
+      subsections: [
+        {
+          title: "Integrated Pre-Master's Course",
+          description:
+            "For our Integrated Pre-Master's courses, applicants are normally expected to meet the following requirements:",
+          items: [
+            "A recognised Bachelor's degree or a three-year diploma.",
+            "A strong portfolio in a relevant subject.",
+            "Applicants must also meet any course-specific requirements.",
+          ],
+        },
+        {
+          title: "Master's Course",
+          description:
+            "For our Master's courses, we usually require:",
+          items: [
+            "Successful completion of a Bachelor's degree at a recognised university.",
+          ],
+        },
+      ],
+    },
+  ],
+
+  englishRequirements: [
+    {
+      programme: "Undergraduate degree (BA / BSc / BMus)",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Undergraduate degree with Integrated Foundation Year",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "International Foundation in Creative Practices",
+      requirement: "IELTS 5.0 overall, with no section below 4.5",
+    },
+    {
+      programme: "Master's degree (MA / MSc / MArch)",
+      requirement: "IELTS 6.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 13 weeks",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 30 weeks",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Postgraduate Research (PhD / MPhil)",
+      requirement:
+        "IELTS 7.0 overall, with 7.0 in writing and no other section below 5.5",
+    },
+    {
+      programme: "Pre-Doctorate",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+  ],
+},
+{
+  code: "KE",
+  name: "Kenya",
+  flag: "🇰🇪",
+  introduction:
+    "Select Kenya to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
+
+  sections: [
+    {
+      title: "Undergraduate Requirements",
+      description:
+        "For our Bachelor's courses, we usually require that you have one of the following:",
+      items: [
+        "Kenya Certificate of Secondary Education (KCSE) with grade B or above.",
+        "A three-year Polytechnic Diploma (TEP).",
+      ],
+    },
+    {
+      title: "Foundation Year Requirements",
+      description:
+        "For our Integrated Foundation courses, we usually require:",
+      items: [
+        "A Kenya Certificate of Secondary Education (KCSE), taken after 12 years of schooling, with an overall grade of C or above.",
+        "For our International Foundation in Creative Practices and Integrated Foundation courses, five IGCSEs with grades 9–4 / A*–C may also be considered.",
+      ],
+    },
+    {
+      title: "Postgraduate Requirements",
+      subsections: [
+        {
+          title: "Integrated Pre-Master's Course",
+          description:
+            "For our Integrated Pre-Master's courses, applicants are normally expected to meet the following requirements:",
+          items: [
+            "A recognised Bachelor's degree or a three-year diploma.",
+            "A strong portfolio in a relevant subject.",
+            "Applicants must also meet any course-specific requirements.",
+          ],
+        },
+        {
+          title: "Master's Course",
+          description:
+            "For our Master's courses, we usually require:",
+          items: [
+            "Successful completion of a Bachelor's degree at a recognised university.",
+          ],
+        },
+      ],
+    },
+  ],
+
+  englishRequirements: [
+    {
+      programme: "Kenya Certificate of Secondary Education (KCSE)",
+      requirement: "English at Grade C or above",
+    },
+    {
+      programme: "Undergraduate degree (BA / BSc / BMus)",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Undergraduate degree with Integrated Foundation Year",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "International Foundation in Creative Practices",
+      requirement: "IELTS 5.0 overall, with no section below 4.5",
+    },
+    {
+      programme: "Master's degree (MA / MSc / MArch)",
+      requirement: "IELTS 6.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 13 weeks",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 30 weeks",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Postgraduate Research (PhD / MPhil)",
+      requirement:
+        "IELTS 7.0 overall, with 7.0 in writing and no other section below 5.5",
+    },
+    {
+      programme: "Pre-Doctorate",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+  ],
+},
+{
+  code: "EG",
+  name: "Egypt",
+  flag: "🇪🇬",
+  introduction:
+    "Select Egypt to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
+
+  sections: [
+    {
+      title: "Undergraduate Requirements",
+      description:
+        "For our Bachelor's courses, we usually require that you have one of the following:",
+      items: [
+        "A two-year Diploma from Al-Azhar with 60% or above.",
+        "A Diploma from a Technical, Commercial, Industrial or Health Institute with 60%.",
+      ],
+    },
+    {
+      title: "Foundation Year Requirements",
+      description:
+        "For our Integrated Foundation courses, we usually require:",
+      items: [
+        "A General Secondary Education Certificate with 65% or above.",
+        "For our International Foundation in Creative Practices and Integrated Foundation courses, five IGCSEs with grades 9–4 / A*–C may also be considered.",
+      ],
+    },
+    {
+      title: "Postgraduate Requirements",
+      subsections: [
+        {
+          title: "Integrated Pre-Master's Course",
+          description:
+            "For our Integrated Pre-Master's courses, applicants are normally expected to meet the following requirements:",
+          items: [
+            "A recognised Bachelor's degree or a three-year diploma.",
+            "A strong portfolio in a relevant subject.",
+            "Applicants must also meet any course-specific requirements.",
+          ],
+        },
+        {
+          title: "Master's Course",
+          description:
+            "For our Master's courses, we usually require:",
+          items: [
+            "Successful completion of a Bachelor's degree at a recognised university.",
+          ],
+        },
+      ],
+    },
+  ],
+
+  englishRequirements: [
+    {
+      programme: "Undergraduate degree (BA / BSc / BMus)",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Undergraduate degree with Integrated Foundation Year",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "International Foundation in Creative Practices",
+      requirement: "IELTS 5.0 overall, with no section below 4.5",
+    },
+    {
+      programme: "Master's degree (MA / MSc / MArch)",
+      requirement: "IELTS 6.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 13 weeks",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 30 weeks",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Postgraduate Research (PhD / MPhil)",
+      requirement:
+        "IELTS 7.0 overall, with 7.0 in writing and no other section below 5.5",
+    },
+    {
+      programme: "Pre-Doctorate",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+  ],
 },
 ];

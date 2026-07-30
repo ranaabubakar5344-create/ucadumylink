@@ -75,7 +75,7 @@ export default function AccreditationsSlider() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-black/65">
-            UCA UAE maintains internationally recognised academic quality,
+            UCA Delivered By FEUC UAE maintains internationally recognised academic quality,
             giving students confidence in the value of their qualification.
           </p>
         </div>

@@ -37,7 +37,7 @@ const creativeProjects = [
 ];
 
 const partnershipItems = [
-  "Partner with UCA@FEUC for bespoke workshops and community programmes",
+  "Partner with UCA Delivered By FEUC UAE for bespoke workshops and community programmes",
   "Host collaborative design challenges or hackathons",
   "Engage in mentorship programmes for aspiring creative students",
 ];
@@ -94,7 +94,7 @@ export default function CommunityEngagementPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black">
             <p>
-              At University for the Creative Arts @FEUC, creativity isn’t
+              At University for the Creative Arts Delivered By FEUC UAE , creativity isn’t
               confined to the classroom. We believe in using design, media, and
               technology to inspire, connect, and make a real difference in
               local and global communities.
@@ -171,7 +171,10 @@ export default function CommunityEngagementPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-white">
-             UCA@FEUC partners with schools, government entities, creative organisations, and community stakeholders to develop projects that foster creativity, innovation, and positive community impact.
+           UCA
+Delivered By
+FEUC UAE
+ partners with schools, government entities, creative organisations, and community stakeholders to develop projects that foster creativity, innovation, and positive community impact.
             </p>
           </div>
 
@@ -227,7 +230,7 @@ export default function CommunityEngagementPage() {
               {
                 icon: Handshake,
                 title: "Organisations",
-                text: "Partner with UCA@FEUC for creative programmes and community initiatives.",
+                text: "Partner with UCA Delivered By FEUC for creative programmes and community initiatives.",
               },
               {
                 icon: Users,
@@ -276,7 +279,7 @@ export default function CommunityEngagementPage() {
           <div>
             <p className="text-lg leading-8 text-[#0A1414]/75">
               Whether you’re a local school, organisation, or creative
-              professional, UCA@FEUC invites you to get involved. Together, we
+              professional, UCA Delivered By FEUC invites you to get involved. Together, we
               can use creativity to educate, inspire, and transform communities.
             </p>
 

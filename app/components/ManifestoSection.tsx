@@ -60,7 +60,7 @@ export default function WelcomeUcaSection() {
       icon: Trophy,
       number: "95%",
       label: "Graduate Success",
-      text: "Successful careers start at UCA UK",
+      text: "Successful careers start at UCA ",
     },
   ];
 

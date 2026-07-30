@@ -244,7 +244,7 @@ PROGRAMMES: {
 const navItems: NavItem[] = [
   { label: "PROGRAMMES", href: "#", display: <>PROGRAMMES</> },
   { label: "EXPERIENCE", href: "#" },
-  { label: "ADMISSIONS", href: "#" },
+  { label: "ADMISSIONS", href: "/admissions" },
   { label: "SCHOLARSHIPS", href: "#" },
 
   { label: "CONNECT", href: "#" },
