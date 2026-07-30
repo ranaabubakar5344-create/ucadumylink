@@ -174,7 +174,7 @@ PROGRAMMES: {
   SCHOLARSHIPS: {
     label: "SCHOLARSHIPS",
     href: "#",
-    image: "/adm.webp",
+    image: "/CampusFront.jpg",
     columns: [
       {
         title: "",
