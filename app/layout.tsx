@@ -5,7 +5,9 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "./components/Footer";
 import AnnouncementPopup from "./components/AnnouncementPopup";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import CookieConsent from "./components/CookieConsent";
 const garageFallback = Oswald({
+
   variable: "--font-garage",
   subsets: ["latin"],
   weight: ["500", "600", "700"],
@@ -40,6 +42,8 @@ export default function RootLayout({
         <Navbar />
         <WhatsAppFloat/>
         {children}
+          <CookieConsent />
+
       <Footer/>
       </body>
 
