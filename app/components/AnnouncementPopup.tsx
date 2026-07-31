@@ -47,11 +47,11 @@ export default function AnnouncementPopup() {
             <div className="p-7 md:p-9">
               <CalendarDays className="h-12 w-12 text-[#C8EB00]" />
 
-              <h2 className="font-garage mt-5 text-[48px] font-black uppercase leading-[1.0] tracking-[-0.05em] md:text-[64px]">
-                Open Day
-                <br />
-                At UCA@FEUC UAE
-              </h2>
+         <h2 className="font-garage mt-5 text-[35px] font-black uppercase leading-[1.0] tracking-[-0.04em] sm:text-[46px] md:text-[64px]">
+  Open Day
+  <br />
+  At UCA@FEUC UAE
+</h2>
 
               <p className="mt-5 text-base leading-7 text-black">
                 Join our upcoming open day and explore programmes, admissions,
