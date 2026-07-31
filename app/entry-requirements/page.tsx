@@ -4301,7 +4301,7 @@ const sortedCountries = useMemo(() => {
                 <GraduationCap className="h-8 w-8" />
               </div>
 
-              <p className="font-neue mt-7 text-xs font-bold uppercase tracking-[0.25em] text-[#829B00]">
+              <p className="font-neue mt-7 text-xs font-bold uppercase tracking-[0.25em] text-[#C8EB00]">
                 Country Requirements
               </p>
 
