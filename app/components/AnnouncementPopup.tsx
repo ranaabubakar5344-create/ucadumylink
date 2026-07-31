@@ -50,7 +50,7 @@ export default function AnnouncementPopup() {
               <h2 className="font-garage mt-5 text-[48px] font-black uppercase leading-[1.0] tracking-[-0.05em] md:text-[64px]">
                 Open Day
                 <br />
-                At UCA Delivered By FEUC UAE
+                At UCA@FEUC UAE
               </h2>
 
               <p className="mt-5 text-base leading-7 text-black">
