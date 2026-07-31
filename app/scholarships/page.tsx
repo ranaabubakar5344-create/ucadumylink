@@ -57,11 +57,11 @@ export default function ScholarshipsPage() {
               UCA Delivered By FEUC UAE Scholarships
             </p>
 
-            <h1 className="font-garage mt-6 text-[58px] font-black uppercase leading-[0.88] tracking-[-0.055em] sm:text-[70px] md:text-[104px] lg:text-[120px]">
-              Merit
-              <br />
-              <span className="text-[#C8EB00]">Scholarships</span>
-            </h1>
+            <h1 className="font-garage mt-6 text-[46px] font-black uppercase leading-[0.9] tracking-[-0.045em] min-[380px]:text-[50px] sm:text-[70px] md:text-[104px] lg:text-[120px]">
+  Merit
+  <br />
+  <span className="text-[#C8EB00]">Scholarships</span>
+</h1>
           </div>
 
           <div className="border-l-4 border-[#C8EB00] pl-6">
