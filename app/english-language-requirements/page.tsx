@@ -532,7 +532,7 @@ export default function EnglishLanguageRequirementsPage() {
 
           <p className="mt-8 max-w-3xl text-base leading-8 text-white/75 md:text-xl">
             Learn which English-language tests are accepted and what scores you
-            need for undergraduate study.
+            need for study.
           </p>
         </div>
       </section>
@@ -555,20 +555,7 @@ export default function EnglishLanguageRequirementsPage() {
               </h2>
             </div>
 
-            <div className="flex flex-col justify-center">
-              <p className="text-lg leading-8 text-black/70 md:text-xl md:leading-9">
-                When you apply for a Student Route visa, you need to prove your
-                English-language ability.
-              </p>
-
-              <div className="mt-8 border-l-4 border-[#C8EB00] bg-[#F7F7F2] p-6">
-                <p className="leading-8 text-black/65">
-                  The type of English-language test you need depends on the
-                  academic level of your course and whether you require a
-                  Student Route visa.
-                </p>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>

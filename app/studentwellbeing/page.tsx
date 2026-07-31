@@ -51,7 +51,7 @@ export default function StudentWellbeingSupportPage() {
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
             Supporting your mental, emotional, and social wellbeing throughout
-            your time at UCA@FEUC.
+            your time at UCA Delivered by FEUC.
           </p>
 
           <Link
@@ -83,7 +83,7 @@ export default function StudentWellbeingSupportPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black/70">
             <p>
-              At University for the Creative Arts at FEUC, your wellbeing is a
+              At University for the Creative Arts Delivered by FEUC, your wellbeing is a
               priority. We are committed to creating a supportive learning
               environment where you feel safe, healthy, and connected — both
               academically and personally.
@@ -91,7 +91,7 @@ export default function StudentWellbeingSupportPage() {
 
             <p>
               Our wellbeing services are designed to support your mental,
-              emotional, and social health throughout your time at UCA@FEUC. We
+              emotional, and social health throughout your time at University for the Creative Arts Delivered by FEUC. We
               understand that university life can bring challenges, and we are
               here to help you navigate them with care and confidence.
             </p>
@@ -219,7 +219,7 @@ export default function StudentWellbeingSupportPage() {
             <div>
               <p className="text-lg leading-8 text-[#0A1414]/75">
                 To access wellbeing or counselling services, reach out to the
-                UCA@FEUC student support team. Our team will guide you through
+                University for the Creative Arts Delivered by FEUC student support team. Our team will guide you through
                 your options and connect you with the right support.
               </p>
 
@@ -247,7 +247,7 @@ export default function StudentWellbeingSupportPage() {
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-black/70">
             No matter what you’re facing — academic pressures, personal
-            challenges, or life changes — support is available. At UCA@FEUC,
+            challenges, or life changes — support is available. At UCA Delivered by FEUC,
             we’re committed to helping you feel heard, supported, and empowered.
           </p>
 

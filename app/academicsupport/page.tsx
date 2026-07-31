@@ -96,7 +96,7 @@ export default function AcademicSupportPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black/70">
             <p>
-              At University for the Creative Arts (UCA) at FEUC, we are
+              At University for the Creative Arts (UCA) Delivered by FEUC, we are
               committed to supporting your academic success at every stage of
               your studies.
             </p>
