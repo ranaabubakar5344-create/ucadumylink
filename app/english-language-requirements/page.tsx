@@ -542,7 +542,7 @@ export default function EnglishLanguageRequirementsPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
             <div>
-              <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#829B00]">
+              <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#CBE800]">
                 Accepted Language Tests
               </p>
 
@@ -637,7 +637,7 @@ export default function EnglishLanguageRequirementsPage() {
                 <FileCheck2 className="h-7 w-7" />
               </div>
 
-              <p className="font-neue mt-7 text-xs font-bold uppercase tracking-[0.25em] text-[#829B00]">
+              <p className="font-neue mt-7 text-xs font-bold uppercase tracking-[0.25em] text-[#CBE800]">
                 SELT Exemptions
               </p>
 
@@ -680,7 +680,7 @@ export default function EnglishLanguageRequirementsPage() {
   <div className="mx-auto max-w-7xl px-5 sm:px-8">
     <div className="mb-14 grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
       <div>
-        <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#829B00]">
+        <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#CBE800]">
           Accepted English Tests
         </p>
 
@@ -690,11 +690,11 @@ export default function EnglishLanguageRequirementsPage() {
           Test Scores
         </h2>
       </div>
-
+{/* 
       <p className="max-w-3xl text-base leading-8 text-black/65 md:text-lg">
         Review the minimum component and total scores required for each study
         level.
-      </p>
+      </p> */}
     </div>
 
     {/* QUICK NAVIGATION */}
@@ -720,7 +720,7 @@ export default function EnglishLanguageRequirementsPage() {
           {/* TABLE HEADING */}
           <div className="mb-8 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="font-neue text-xs font-bold uppercase tracking-[0.24em] text-[#829B00]">
+              <p className="font-neue text-xs font-bold uppercase tracking-[0.24em] text-[#CBE800]">
                 {section.eyebrow}
               </p>
 
@@ -817,12 +817,12 @@ export default function EnglishLanguageRequirementsPage() {
                 columns.
               </p>
 
-              <a
+              {/* <a
                 href="#accepted-language-tests"
                 className="font-garage text-sm font-black uppercase text-[#C8EB00] hover:text-white"
               >
                 Back To Top
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -836,11 +836,11 @@ export default function EnglishLanguageRequirementsPage() {
 </section>
 
       {/* IMPORTANT INFORMATION */}
-      <section className="bg-white py-16 md:py-24">
+      {/* <section className="bg-white py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="grid gap-5 md:grid-cols-3">
             <div className="border border-black/10 bg-[#F7F7F2] p-7">
-              <Languages className="h-9 w-9 text-[#829B00]" />
+              <Languages className="h-9 w-9 text-[#CBE800]" />
 
               <h3 className="font-garage mt-6 text-[28px] font-black uppercase leading-none">
                 Approved Tests
@@ -853,7 +853,7 @@ export default function EnglishLanguageRequirementsPage() {
             </div>
 
             <div className="border border-black/10 bg-[#F7F7F2] p-7">
-              <Clock3 className="h-9 w-9 text-[#829B00]" />
+              <Clock3 className="h-9 w-9 text-[#CBE800]" />
 
               <h3 className="font-garage mt-6 text-[28px] font-black uppercase leading-none">
                 Test Validity
@@ -879,7 +879,7 @@ export default function EnglishLanguageRequirementsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-[#0A1414] py-16 text-white md:py-24">
