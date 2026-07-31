@@ -160,7 +160,9 @@ PROGRAMMES: {
             href: "#",
             items: [
               { label: "Entry Requirements", href: "/entry-requirements" },
-                            { label: "Contact Admissions", href: "/admissions" },
+          { label: "English Language Requirements", href: "/english-language-requirements" },
+
+              { label: "Contact Admissions", href: "/admissions" },
 
             ],
           },

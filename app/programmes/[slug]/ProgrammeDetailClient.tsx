@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState,useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AccreditationsSlider from "./AccrediationSlider";
 import { countries } from "@/app/data/countryRequirements";
@@ -86,7 +86,19 @@ const [selectedCountryCode, setSelectedCountryCode] = useState("");
   ];
 const selectedCountry =
   countries.find((country) => country.code === selectedCountryCode) ?? null;
+const sortedCountries = useMemo(() => {
+  const normalCountries = countries
+    .filter((country) => country.code !== "OTHER")
+    .sort((a, b) => a.name.localeCompare(b.name));
 
+  const otherCountry = countries.find(
+    (country) => country.code === "OTHER"
+  );
+
+  return otherCountry
+    ? [...normalCountries, otherCountry]
+    : normalCountries;
+}, []);
 const getProgrammeRequirementType = () => {
   const programmeText = `${programme.title} ${programme.level ?? ""} ${
     programme.slug ?? ""
@@ -455,12 +467,11 @@ const relevantCountryRequirement = getRelevantCountryRequirement();
                   <option value="" disabled>
                     Select your country
                   </option>
-
-                  {countries.map((country) => (
-                    <option key={country.code} value={country.code}>
-                      {country.name}
-                    </option>
-                  ))}
+{sortedCountries.map((country) => (
+  <option key={country.code} value={country.code}>
+    {country.flag} {country.name}
+  </option>
+))}
                 </select>
 
                 <ChevronDown className="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2" />
