@@ -37,7 +37,7 @@ const creativeProjects = [
 ];
 
 const partnershipItems = [
-  "Partner with UCA Delivered By FEUC UAE for bespoke workshops and community programmes",
+  "Partner with UCA Delivered By FEUC for bespoke workshops and community programmes",
   "Host collaborative design challenges or hackathons",
   "Engage in mentorship programmes for aspiring creative students",
 ];
@@ -61,7 +61,7 @@ export default function CommunityEngagementPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-whitEe/90">
-            UCA in the community: creativity beyond campus, connecting people
+            UCA Delivered By FEUC in the community: creativity beyond campus, connecting people
             through design, media and technology.
           </p>
 
@@ -94,7 +94,7 @@ export default function CommunityEngagementPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black">
             <p>
-              At University for the Creative Arts Delivered By FEUC UAE , creativity isn’t
+              At University for the Creative Arts Delivered By FEUC,creativity isn’t
               confined to the classroom. We believe in using design, media, and
               technology to inspire, connect, and make a real difference in
               local and global communities.
@@ -173,7 +173,7 @@ export default function CommunityEngagementPage() {
             <p className="mt-6 text-lg leading-8 text-white">
            UCA
 Delivered By
-FEUC UAE
+FEUC 
  partners with schools, government entities, creative organisations, and community stakeholders to develop projects that foster creativity, innovation, and positive community impact.
             </p>
           </div>
