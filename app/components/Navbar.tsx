@@ -230,9 +230,9 @@ PROGRAMMES: {
             label: "About",
             href: "#",
             items: [
-              { label: "About FEUC", href: "/about-feuc" },
+              { label: "About UCA FEUC", href: "/about-feuc" },
               { label: "UCA UK", href: "/about-uca-uk" },
-              { label: "Why Choose UCA-UAE", href: "/whychooseus" },
+              // { label: "Why Choose UCA-UAE", href: "/whychooseus" },
               { label: "Policies & Regulations", href: "/policies" },
             ],
           },

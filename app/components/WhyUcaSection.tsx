@@ -120,7 +120,7 @@ export default function AboutUcaSection() {
             </div>
 
             <Link
-              href="/whychooseus"
+              href="/about-feuc"
               className="font-garage mt-10 inline-flex items-center gap-4 bg-[#C8EB00] px-8 py-4 text-[18px] font-black uppercase text-[#0A1414] transition hover:bg-white"
             >
               Discover More

@@ -85,8 +85,9 @@ export default function Footer() {
 
             <div className="mt-5 space-y-3 text-sm text-white">
               {[
-                ["About UCA UAE", "/whychooseus"],
                 ["Entry Requirements", "/entry-requirements"],
+                                ["Scholarships", "/scholarships"],
+
                 ["Student Clubs", "/studentclubs"],
                 ["Policies & Regulations", "/policies"],
                 ["Enquire Now", "https://admissions.uca.feuc.ae/enquiry_form"],

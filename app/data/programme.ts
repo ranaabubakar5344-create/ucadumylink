@@ -8,7 +8,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47775 (inclusive 5% VAT)",
+    fees: "AED 47,775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/co.jpg",
@@ -108,7 +108,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47775 (inclusive 5% VAT)",
+    fees: "AED 47,775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/graa.jpg",
@@ -226,7 +226,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47775 (inclusive 5% VAT)",
+    fees: "AED 47,775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/buise.jpg",
@@ -605,7 +605,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47775 (inclusive 5% VAT)",
+    fees: "AED 47,775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/games.jpg",
@@ -715,7 +715,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47775 (inclusive 5% VAT)",
+    fees: "AED 47,775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/visal.webp",
@@ -827,7 +827,7 @@ export const PROGRAMME_DETAILS = {
     studyMode: "Full Time",
 
     intake: ["September", "February", "June"],
-    fees: "AED 47775 (inclusive 5% VAT)",
+    fees: "AED 47,775 (inclusive 5% VAT)",
     awardingBody: "University for the Creative Arts (UCA), UK",
 
     heroImage: "/dig.jpg",
