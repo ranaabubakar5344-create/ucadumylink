@@ -207,7 +207,7 @@ PROGRAMMES: {
         lists: [
           {
             label: "CONNECT",
-            href: "/industry/partnerships",
+            href: "",
             items: [
               { label: "School Partnerships", href: "/schoolpatnership" },
               { label: "Community Engagements", href: "/communityengagements" },
