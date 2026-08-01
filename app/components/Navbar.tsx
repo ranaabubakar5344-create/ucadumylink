@@ -161,6 +161,7 @@ PROGRAMMES: {
             items: [
               { label: "Entry Requirements", href: "/entry-requirements" },
           { label: "English Language Requirements", href: "/english-language-requirements" },
+          { label: "Tuition Fees", href: "/tuition-fees" },
 
               { label: "Contact Admissions", href: "/admissions" },
 
