@@ -84,7 +84,7 @@ export default function TuitionFeesPage() {
       <section className="bg-[#F7F7F2] py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-12">
-            <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#829B00]">
+            <p className="font-neue text-xs font-bold uppercase tracking-[0.25em] text-[#CBE800]">
               Current Tuition Fees
             </p>
 
@@ -121,7 +121,7 @@ export default function TuitionFeesPage() {
 
                   <p
                     className={`font-neue mt-8 text-xs font-bold uppercase tracking-[0.24em] ${
-                      featured ? "text-[#C8EB00]" : "text-[#829B00]"
+                      featured ? "text-[#C8EB00]" : "text-[#CBE800]"
                     }`}
                   >
                     {item.category}
