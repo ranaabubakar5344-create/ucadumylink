@@ -1815,6 +1815,92 @@ const countries: CountryRequirements[] = [
   ],
 },
 {
+  code: "CO",
+  name: "Colombia",
+  flag: "🇨🇴",
+  introduction:
+    "Select Colombia to review the academic and English-language qualifications normally considered for Foundation, Bachelor's, Pre-Master's and Master's study.",
+
+  sections: [
+    {
+      title: "Undergraduate Requirements",
+      description:
+        "For our Bachelor's courses, we usually require:",
+      items: [
+        "A transcript showing successful completion of one year of university-level study with an average GPA of 3.5 from a recognised Colombian university.",
+      ],
+    },
+    {
+      title: "Foundation Year Requirements",
+      description:
+        "For our Integrated Foundation courses, we usually require:",
+      items: [
+        "A Colombian Bachillerato with Desempeño Básico.",
+        "For our International Foundation in Creative Practices and Integrated Foundation courses, five IGCSEs with grades 9–4 / A*–C may also be considered.",
+      ],
+    },
+    {
+      title: "Postgraduate Requirements",
+      subsections: [
+        {
+          title: "Integrated Pre-Master's Course",
+          description:
+            "For our Integrated Pre-Master's courses, applicants are normally expected to meet the following requirements:",
+          items: [
+            "A recognised Bachelor's degree or a three-year diploma.",
+            "A strong portfolio in a relevant subject.",
+            "Applicants must also meet any course-specific requirements.",
+          ],
+        },
+        {
+          title: "Master's Course",
+          description:
+            "For our Master's courses, we usually require:",
+          items: [
+            "Successful completion of a Licenciado or Título from a recognised university.",
+          ],
+        },
+      ],
+    },
+  ],
+
+  englishRequirements: [
+    {
+      programme: "Undergraduate degree (BA / BSc / BMus)",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Undergraduate degree with Integrated Foundation Year",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "International Foundation in Creative Practices",
+      requirement: "IELTS 5.0 overall, with no section below 4.5",
+    },
+    {
+      programme: "Master's degree (MA / MSc / MArch)",
+      requirement: "IELTS 6.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 13 weeks",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+    {
+      programme: "Integrated Pre-Master's — 30 weeks",
+      requirement: "IELTS 5.5 overall, with no section below 5.5",
+    },
+    {
+      programme: "Postgraduate Research (PhD / MPhil)",
+      requirement:
+        "IELTS 7.0 overall, with 7.0 in writing and no other section below 5.5",
+    },
+    {
+      programme: "Pre-Doctorate",
+      requirement: "IELTS 6.0 overall, with no section below 5.5",
+    },
+  ],
+},
+{
   code: "KZ",
   name: "Kazakhstan",
   flag: "🇰🇿",
