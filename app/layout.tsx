@@ -20,7 +20,7 @@ const neueFallback = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "UCA Delivered By FEUC UAE | University for the Creative Arts",
+  title: "UCA Delivered By FEUC UAQ | University for the Creative Arts",
   description:
     "Study creative arts, business, computing, design, and media programmes at UCA Delivered By FEUC UAE.",
 };

@@ -727,7 +727,7 @@ const relevantCountryRequirement = getRelevantCountryRequirement();
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#0A1414]/75">
-            Join University for the creative arts delivered by FEUC and start building your creative future with
+            Join University for the Creative Arts Delivered by FEUC and start building your creative future with
             confidence.
           </p>
 
