@@ -107,7 +107,7 @@ PROGRAMMES: {
       title: "",
       lists: [
         {
-          label: "Foundation & Pre-Master's Programmes",
+          label: "Entry Routes",
           href: "#",
           items: [
             {

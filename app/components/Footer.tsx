@@ -64,7 +64,7 @@ export default function Footer() {
               {[ 
                 "Undergraduate Programmes",
                 "Postgraduate Programmes",
-                "Foundation & Pre-Master's Programmes",
+                "Entry Routes",
              
               ].map((item) => (
                 <Link
