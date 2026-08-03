@@ -205,7 +205,7 @@ export default function ScholarshipSection() {
                   </optgroup>
 
                   <optgroup
-                    label="Foundation & Pre-Master's Programmes"
+                    label="Entry Routes"
                     className="text-black"
                   >
                     <option
