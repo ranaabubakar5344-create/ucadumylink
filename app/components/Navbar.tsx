@@ -429,7 +429,7 @@ useEffect(() => {
 
    
 
-    <Link
+    {/* <Link
       href="#"
       target="_blank"
       rel="noopener noreferrer"
@@ -437,7 +437,7 @@ useEffect(() => {
       className="transition-colors duration-300 hover:text-white"
     >
       <TikTokIcon className="h-5 w-5" />
-    </Link>
+    </Link> */}
 
   </div>
 </div>
