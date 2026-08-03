@@ -457,7 +457,14 @@ useEffect(() => {
 >
   Staff Login
 </Link>
-
+     <Link
+        href="https://lms.uca.feuc.ae/login/index.php"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${headingFont} flex h-11 items-center justify-center bg-[#0A1414] px-9 text-[14px] font-black uppercase tracking-[0.04em] text-[#C8EB00] transition hover:bg-white hover:text-[#0A1414]`}
+      >
+        Student Login
+      </Link>
       <Link
         href="https://admissions.uca.feuc.ae/registration"
         target="_blank"
@@ -475,81 +482,47 @@ useEffect(() => {
       >
         Enquire Now
       </Link>
+
+  
     </div>
   </div>
 
   {/* MOBILE */}
-  <div className="flex h-11 w-full items-center justify-between md:hidden">
-    {/* LEFT ICONS */}
- <div className="flex shrink-0 items-center gap-2 text-[#0A1414]">
-  <Link
-    href="https://www.instagram.com/uca.uae/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Instagram"
-    className="transition-colors duration-300 hover:text-white"
-  >
-    <FaInstagram className="h-4 w-4" />
-  </Link>
+ {/* MOBILE TOP BAR */}
+{/* MOBILE TOP BAR */}
+<div className="flex h-11 w-full items-center justify-end bg-[#C8EB00] px-3 md:hidden">
+  <div className="flex items-center gap-5">
+    {/* STAFF */}
+    <Link
+      href="https://admissions.uca.feuc.ae/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${headingFont} flex h-8 w-[58px] items-center justify-center rounded-[2px] border border-[#0A1414] bg-[#C8EB00] text-[9px] font-black uppercase leading-none text-[#0A1414]`}
+    >
+      Staff
+    </Link>
 
-  <Link
-    href="https://www.linkedin.com/company/uca-feuc-ae/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-    className="transition-colors duration-300 hover:text-white"
-  >
-    <FaLinkedinIn className="h-4 w-4" />
-  </Link>
+    {/* STUDENT LOGIN */}
+    <Link
+      href="lms.uca.feuc.ae/login/index.php"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${headingFont} flex h-8 w-[112px] items-center justify-center whitespace-nowrap rounded-[2px] bg-[#0A1414] px-2 text-[9px] font-black uppercase leading-none text-[#C8EB00]`}
+    >
+      Student Login
+    </Link>
 
-  <Link
-    href="#"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Facebook"
-    className="transition-colors duration-300 hover:text-white"
-  >
-    <FaFacebookF className="h-4 w-4" />
-  </Link>
-</div>
-
-    {/* RIGHT ACTIONS */}
-    <div className="flex min-w-0 items-center gap-1">
-      <button
-        type="button"
-        aria-label="Search"
-        className="flex h-8 w-7 shrink-0 items-center justify-center text-[#0A1414]"
-      >
-        <Search className="h-4 w-4" />
-      </button>
-
-      <Link
-        href="https://admissions.uca.feuc.ae/"
-        target="blank"
-        className={`${headingFont} flex h-8 shrink-0 items-center justify-center border border-[#0A1414] px-2 text-[9px] font-black uppercase text-[#0A1414]`}
-      >
-        Staff
-      </Link>
-
-      <Link
-        href="https://admissions.uca.feuc.ae/registration"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`${headingFont} flex h-8 shrink-0 items-center justify-center bg-[#0A1414] px-2 text-[9px] font-black uppercase text-[#C8EB00]`}
-      >
-        Apply
-      </Link>
-
-      <Link
-        href="https://admissions.uca.feuc.ae/enquiry_form"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`${headingFont} flex h-8 shrink-0 items-center justify-center bg-[#0A1414] px-2 text-[9px] font-black uppercase text-[#C8EB00]`}
-      >
-        Enquire
-      </Link>
-    </div>
+    {/* ENQUIRE */}
+    <Link
+      href="https://admissions.uca.feuc.ae/enquiry_form"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${headingFont} flex h-8 w-[76px] items-center justify-center rounded-[2px] bg-[#0A1414] text-[9px] font-black uppercase leading-none text-[#C8EB00]`}
+    >
+      Enquire
+    </Link>
   </div>
+</div>
 </div>
   </div>
 </div>
