@@ -497,7 +497,7 @@ useEffect(() => {
       href="https://admissions.uca.feuc.ae/"
       target="_blank"
       rel="noopener noreferrer"
-      className={`${headingFont} flex h-8 w-[58px] items-center justify-center rounded-[2px] border border-[#0A1414] bg-[#C8EB00] text-[9px] font-black uppercase leading-none text-[#0A1414]`}
+      className={`${headingFont} flex h-8 w-[58px] items-center justify-center rounded-[2px] border border-[#0A1414] bg-[#0A1414] text-[9px] font-black uppercase leading-none text-[#C8EB00]`}
     >
       Staff
     </Link>
