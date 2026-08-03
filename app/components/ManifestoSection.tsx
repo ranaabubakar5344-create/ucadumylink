@@ -110,7 +110,7 @@ export default function WelcomeUcaSection() {
     <span className="mt-5 block max-w-[620px] text-[44px] font-black leading-[1.0] tracking-[-0.045em] text-[#C8EB00] sm:text-[56px] md:text-[66px] lg:text-[72px]">
       Delivered By
       <br />
-      FEUC UAE
+      FEUC UAQ
     </span>
   </motion.h1>
 
@@ -123,7 +123,7 @@ export default function WelcomeUcaSection() {
     >
       Where creativity meets purpose. At UCA
 Delivered By
-FEUC UAE, we empower the next
+FEUC UAQ, we empower the next
       generation of artists, designers, creators and innovators to shape the
       future of the creative industries.
     </motion.p>

@@ -54,7 +54,7 @@ export default function ScholarshipsPage() {
         <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 md:py-28 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
           <div>
             <p className="font-neue text-xs font-bold uppercase tracking-[0.3em] text-[#C8EB00] sm:text-sm">
-              UCA Delivered By FEUC UAE Scholarships
+              UCA Delivered By FEUC UAQ Scholarships
             </p>
 
             <h1 className="font-garage mt-6 text-[46px] font-black uppercase leading-[0.9] tracking-[-0.045em] min-[380px]:text-[50px] sm:text-[70px] md:text-[104px] lg:text-[120px]">
@@ -103,7 +103,7 @@ export default function ScholarshipsPage() {
             <div className="flex flex-col justify-center">
               <p className="text-lg leading-8 text-black/70 md:text-xl md:leading-9">
                 The University for the Creative Arts (UCA), UK, delivered by
-                Future Education University College (FEUC), UAE, offers Merit
+                Future Education University College (FEUC), UAQ, offers Merit
                 Scholarships of up to 50% for eligible students enrolled in
                 selected programmes.
               </p>

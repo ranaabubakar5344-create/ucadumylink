@@ -50,12 +50,12 @@ export default function AnnouncementPopup() {
          <h2 className="font-garage mt-5 text-[35px] font-black uppercase leading-[1.0] tracking-[-0.04em] sm:text-[46px] md:text-[64px]">
   Open Day
   <br />
-  At UCA@FEUC UAE
+  At UCA@FEUC UAQ
 </h2>
 
               <p className="mt-5 text-base leading-7 text-black">
                 Join our upcoming open day and explore programmes, admissions,
-                scholarships, student life and creative opportunities at UCA Delivered By FEUC UAE.
+                scholarships, student life and creative opportunities at UCA Delivered By FEUC UAQ.
               </p>
 
               <div className="mt-6 border-l-4 border-[#C8EB00] bg-[#F7F7F2] p-4">
@@ -113,7 +113,7 @@ UCA Delivered By FEUC
 
                 <p className="mt-5 text-base leading-7 text-white/85">
                   Explore programmes, admissions and your future at University
-                  for the Creative Arts in the UAE.
+                  for the Creative Arts in the UAE .
                 </p>
               </div>
 

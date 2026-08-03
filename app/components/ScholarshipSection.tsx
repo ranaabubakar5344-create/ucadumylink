@@ -219,7 +219,7 @@ export default function ScholarshipSection() {
                       value="integrated-pre-masters"
                       className="text-black"
                     >
-                      Integrated Pre-Master&apos;s
+                      Integrated Pre-Masters
                     </option>
                   </optgroup>
                 </select>

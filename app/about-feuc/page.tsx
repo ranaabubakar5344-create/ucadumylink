@@ -24,7 +24,7 @@ const standoutCards = [
   {
     icon: MapPin,
     title: "Strategic Location",
-    text: "Located in the emirate of umm al quwain in UAE , UCA delivered by FEUC connects students with international opportunities and regional industry access.",
+    text: "Located in the emirate of Umm Al Quwain in UAE , UCA delivered by FEUC connects students with international opportunities and regional industry access.",
   },
   {
     icon: Lightbulb,

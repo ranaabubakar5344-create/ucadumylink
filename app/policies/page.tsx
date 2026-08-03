@@ -49,7 +49,7 @@ export default function PoliciesPage() {
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-white">
             Key policies that guide academic conduct, campus safety, and
-            community standards at UCA.
+            community standards at University for the creative arts (UCA) delivered by Future Education University College (FEUC) .
           </p>
 
           <Link
@@ -83,7 +83,7 @@ export default function PoliciesPage() {
           <div className="space-y-6 text-lg leading-8 text-black/70">
             <p>
               University for the Creative Arts (UCA) Delivered By
-FEUC UAE is committed to maintaining
+FEUC UAQ is committed to maintaining
               a safe, respectful, and professional academic environment for all
               members of its community.
             </p>
