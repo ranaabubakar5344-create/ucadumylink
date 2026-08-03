@@ -9,9 +9,9 @@ import {
 } from "react-icons/fa6";
 const socialLinks = [
   {
-    icon: FaFacebookF,
-    href: "/ #",
-    label: "Facebook",
+    icon: Mail,
+    href: "mailto:admissions@uca.feuc.ae",
+    label: "Email",
   },
   {
     icon: FaInstagram,
@@ -23,11 +23,11 @@ const socialLinks = [
     href: "https://www.linkedin.com/company/uca-feuc-ae/",
     label: "LinkedIn",
   },
-  {
-    icon: FaYoutube,
-    href: "#",
-    label: "YouTube",
-  },
+  // {
+  //   icon: FaYoutube,
+  //   href: "#",
+  //   label: "YouTube",
+  // },
 ];
 export default function Footer() {
   return (

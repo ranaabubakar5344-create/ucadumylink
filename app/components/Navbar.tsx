@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { ReactNode, SVGProps } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Send, Search, Menu, X } from "lucide-react";
+import { Send, Search, Menu, X, Mail } from "lucide-react";
 
 import {
   FaFacebookF,
@@ -397,26 +397,16 @@ useEffect(() => {
     {/* LEFT SIDE */}
     <div className="flex h-11 items-center text-[#0A1414]">
   <div className="flex items-center gap-4 px-5">
-    <Link
-      href="#"
+ <Link
+      href="https://www.linkedin.com/company/uca-feuc-ae/"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="TikTok"
+      aria-label="LinkedIn"
       className="transition-colors duration-300 hover:text-white"
     >
-      <TikTokIcon className="h-5 w-5" />
+      <FaLinkedinIn className="h-5 w-5" />
     </Link>
-
-    <Link
-      href="#"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Facebook"
-      className="transition-colors duration-300 hover:text-white"
-    >
-      <FaFacebookF className="h-5 w-5" />
-    </Link>
-
+    
     <Link
       href="https://www.instagram.com/uca.uae/"
       target="_blank"
@@ -428,24 +418,27 @@ useEffect(() => {
     </Link>
 
     <Link
-      href="https://www.linkedin.com/company/uca-feuc-ae/"
+      href="mailto:admissions@uca.feuc.ae"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="LinkedIn"
+      aria-label="Facebook"
       className="transition-colors duration-300 hover:text-white"
     >
-      <FaLinkedinIn className="h-5 w-5" />
+      <Mail className="h-5 w-5" />
     </Link>
+
+   
 
     <Link
       href="#"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="YouTube"
+      aria-label="TikTok"
       className="transition-colors duration-300 hover:text-white"
     >
-      <FaYoutube className="h-5 w-5" />
+      <TikTokIcon className="h-5 w-5" />
     </Link>
+
   </div>
 </div>
 

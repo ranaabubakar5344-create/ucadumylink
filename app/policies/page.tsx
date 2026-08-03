@@ -49,7 +49,7 @@ export default function PoliciesPage() {
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-white">
             Key policies that guide academic conduct, campus safety, and
-            community standards at University for the creative arts (UCA) delivered by Future Education University College (FEUC) .
+            community standards at University for the Creative arts (UCA) delivered by Future Education University College (FEUC) .
           </p>
 
           <Link

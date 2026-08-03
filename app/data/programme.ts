@@ -120,7 +120,6 @@ export const PROGRAMME_DETAILS = {
     ],
 
     highlights: [
-      "UK Awarded Degree (UCA)",
       "Industry-Led Design Projects",
       "Strong Focus on Branding & Visual Identity",
       "Digital, Print & Motion Design Skills",
@@ -218,7 +217,7 @@ export const PROGRAMME_DETAILS = {
 
 
   "business-management": {
-    title: "BA (Hons) Business Management",
+    title: "BA (Hons) Business and Management",
     slug: "business-management",
 
     level: "Undergraduate Programme",
@@ -239,7 +238,6 @@ export const PROGRAMME_DETAILS = {
     ],
 
     highlights: [
-      "UK Awarded Degree (UCA)",
       "Creative Industries Business Focus",
       "Entrepreneurship & Strategic Leadership",
       "Financial Literacy & Data Analytics",
@@ -616,7 +614,6 @@ export const PROGRAMME_DETAILS = {
     ],
 
     highlights: [
-      "UK Awarded Degree (UCA)",
       "Industry-Led Design Projects",
       "Strong Focus on Branding & Visual Identity",
       "Digital, Print & Motion Design Skills",
@@ -707,7 +704,7 @@ export const PROGRAMME_DETAILS = {
   },
   //Ba hons visual communication.....
   "visual-communication": {
-    title: "BA (Hons)Visual Communication",
+    title: "BA (Hons) Visual Communication",
     slug: "visual-communication",
 
     level: "Undergraduate Programme",
@@ -725,7 +722,6 @@ export const PROGRAMME_DETAILS = {
     ],
 
     highlights: [
-      "UK Awarded Degree (UCA)",
       "Industry-Led Design Projects",
       "Strong Focus on Branding & Visual Identity",
       "Digital, Print & Motion Design Skills",
@@ -837,7 +833,6 @@ export const PROGRAMME_DETAILS = {
     ],
 
     highlights: [
-      "UK Awarded Degree (UCA)",
       "Industry-Led Design Projects",
       "Strong Focus on Branding & Visual Identity",
       "Digital, Print & Motion Design Skills",
@@ -942,7 +937,6 @@ export const PROGRAMME_DETAILS = {
     ],
 
     highlights: [
-      "UK Awarded Degree (UCA)",
       "Industry-Led Design Projects",
       "Strong Focus on Branding & Visual Identity",
       "Digital, Print & Motion Design Skills",
@@ -1026,7 +1020,6 @@ export const PROGRAMME_DETAILS = {
       " The Integrated Pre-Masters is a preparatory programme designed to support students who wish to progress to postgraduate study but require additional academic, research, or subject-specific preparation. The course develops advanced study skills, critical thinking, academic writing, and research methods while introducing students to key concepts relevant to their chosen master’s pathway. Through structured teaching, guided projects, and continuous assessment, students build confidence in independent learning, analytical thinking, and professional communication. On successful completion, students are equipped with the academic competence, subject knowledge, and study strategies required to progress smoothly onto a related Master’s degree, with the ability to conduct postgraduate-level research, engage critically with complex ideas, and perform effectively within a UK higher education environment."
     ],
     highlights: [
-      "UK Awarded Degree (UCA)",
       "Industry-Led Design Projects",
       "Strong Focus on Branding & Visual Identity",
       "Digital, Print & Motion Design Skills",

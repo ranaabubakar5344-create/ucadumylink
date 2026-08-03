@@ -48,7 +48,7 @@ export default function SchoolPartnershipPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-white">
-        University for the creative arts (UCA)  delivered by Future Education University College (FEUC) actively collaborates with local schools to provide students
+        University for the Creative arts (UCA)  delivered by Future Education University College (FEUC) actively collaborates with local schools to provide students
             with enriching educational experiences, fostering a strong
             connection between the university and the community.
           </p>
@@ -82,7 +82,7 @@ export default function SchoolPartnershipPage() {
 
           <div className="space-y-6 text-lg leading-8 text-black">
             <p>
-              High school is just the beginning — at University for the creative arts (UCA) delivered by Future Education University College (FEUC), we help students unlock their creative potential and
+              High school is just the beginning — at University for the Creative arts (UCA) delivered by Future Education University College (FEUC), we help students unlock their creative potential and
               prepare for a future in design, media, games, and technology.
             </p>
 

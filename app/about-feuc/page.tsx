@@ -44,7 +44,7 @@ export default function AboutPage() {
         <div className="relative mx-auto max-w-7xl px-5 pt-14 pb-20 md:pt-20 md:pb-28">
       
           <h1 className="font-garage mt-4 max-w-6xl text-[54px] font-black uppercase leading-[1.1] tracking-[-0.05em] md:text-[65px]">
-  University for the creative arts  (UCA)  delivered by      
+  University for the Creative arts  (UCA)  delivered by      
       <br />
 Future Education University College (FEUC) 
           </h1>
@@ -76,13 +76,13 @@ Future Education University College (FEUC)
 
           <div className="space-y-6 text-lg leading-8 text-black">
             <p>
-             University for the creative arts (UCA) delivered by Future Education University College (FEUC) is bringing a legacy of
+             University for the Creative arts (UCA) delivered by Future Education University College (FEUC) is bringing a legacy of
              innovation, and creative excellence to the heart of the
               Middle East.
             </p>
 
             <p>
-         University for the creative arts (UCA) delivered by Future Education University College (FEUC) is more than an academic institution — it is a global hub of
+         University for the Creative arts (UCA) delivered by Future Education University College (FEUC) is more than an academic institution — it is a global hub of
               inspiration where students from diverse backgrounds embark on an
               extraordinary educational journey.
             </p>

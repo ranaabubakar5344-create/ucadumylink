@@ -17,12 +17,7 @@ const ACCREDITATIONS: Accreditation[] = [
       "Recognised under UK Government frameworks, ensuring academic credibility and compliance with international education standards.",
     logo: "/gov_uk.png",
   },
-  {
-    name: "British Council",
-    description:
-      "Aligned with British Council quality benchmarks, supporting international education excellence and global student mobility.",
-    logo: "/brit.jpg",
-  },
+
   {
     name: "Quality Assurance Agency (QAA)",
     description:
@@ -75,7 +70,7 @@ export default function AccreditationsSlider() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-black/65">
-            UCA Delivered By FEUC UAE maintains internationally recognised academic quality,
+            UCA Delivered By FEUC UAQ maintains internationally recognised academic quality,
             giving students confidence in the value of their qualification.
           </p>
         </div>

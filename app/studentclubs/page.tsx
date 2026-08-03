@@ -79,7 +79,7 @@ export default function StudentLifePage() {
 
           <div className="space-y-6 text-lg leading-8 text-black">
             <p>
-              University for the creative arts (UCA) , delivered by Future Education University College (FEUC), offers a vibrant student life where creativity,
+              University for the Creative arts (UCA) , delivered by Future Education University College (FEUC), offers a vibrant student life where creativity,
               collaboration, and community come together. Students can join a
               variety of clubs, societies, and activities to explore their
               interests, meet new friends, and make the most of their university
