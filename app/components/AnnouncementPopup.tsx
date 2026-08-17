@@ -59,7 +59,7 @@ export default function AnnouncementPopup() {
               </p>
 
               <div className="mt-6 border-l-4 border-[#C8EB00] bg-[#F7F7F2] p-4">
-                <p className="font-bold">Date:Sunday,9 August 2026 </p>
+                <p className="font-bold">Date:Sunday,13 September 2026 </p>
                 <p className="mt-1 text-sm text-black/65">
                   Register your interest and our admissions team will contact you.
                 </p>
