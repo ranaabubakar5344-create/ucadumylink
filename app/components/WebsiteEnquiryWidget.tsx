@@ -82,15 +82,15 @@ export default function WebsiteEnquiryWidget() {
             frame.style.position = "fixed";
             frame.style.bottom = "18px";
             frame.style[widgetSide] = "18px";
-            frame.style.width = "min(340px, calc(100vw - 16px))";
-            frame.style.height = "min(520px, calc(100vh - 20px))";
+            frame.style.width = "min(360px, calc(100vw - 20px))";
+            frame.style.height = "min(610px, calc(100vh - 36px))";
             frame.style.border = "0";
-            frame.style.borderRadius = "22px";
+            frame.style.borderRadius = "26px";
             frame.style.background = "transparent";
             frame.style.zIndex = "2147483000";
             frame.style.display = "none";
             frame.style.overflow = "hidden";
-            frame.style.boxShadow = "0 22px 55px rgba(10,20,20,0.28)";
+            frame.style.boxShadow = "0 26px 70px rgba(10,20,20,0.30)";
             return frame;
           }
 
