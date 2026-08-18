@@ -86,7 +86,6 @@ export default function WebsiteEnquiryWidget() {
             frame.style.height = "min(610px, calc(100vh - 36px))";
             frame.style.border = "0";
             frame.style.borderRadius = "26px";
-            frame.style.background = "transparent";
             frame.style.zIndex = "2147483000";
             frame.style.display = "none";
             frame.style.overflow = "hidden";
