@@ -47,7 +47,7 @@ export default function WebsiteEnquiryWidget() {
             launcher.style.padding = "8px 18px 8px 8px";
             launcher.style.border = "1px solid rgba(200,235,0,0.18)";
             launcher.style.borderRadius = "999px";
-            launcher.style.background = "linear-gradient(135deg, #0A1414 0%, #123232 100%)";
+            launcher.style.background = "linear-gradient(135deg, #0A1414 0%, #113131 100%)";
             launcher.style.color = "#ffffff";
             launcher.style.fontFamily = "Inter, Arial, sans-serif";
             launcher.style.cursor = "pointer";
@@ -82,14 +82,15 @@ export default function WebsiteEnquiryWidget() {
             frame.style.position = "fixed";
             frame.style.bottom = "18px";
             frame.style[widgetSide] = "18px";
-            frame.style.width = "min(360px, calc(100vw - 20px))";
-            frame.style.height = "min(610px, calc(100vh - 36px))";
+            frame.style.width = "min(340px, calc(100vw - 16px))";
+            frame.style.height = "min(520px, calc(100vh - 20px))";
             frame.style.border = "0";
-            frame.style.borderRadius = "26px";
+            frame.style.borderRadius = "22px";
+            frame.style.background = "transparent";
             frame.style.zIndex = "2147483000";
             frame.style.display = "none";
             frame.style.overflow = "hidden";
-            frame.style.boxShadow = "0 26px 70px rgba(10,20,20,0.30)";
+            frame.style.boxShadow = "none";
             return frame;
           }
 
