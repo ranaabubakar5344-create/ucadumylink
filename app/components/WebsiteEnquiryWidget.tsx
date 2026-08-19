@@ -16,7 +16,7 @@ export default function WebsiteEnquiryWidget() {
 
           var widgetUrl = "${CRM_URL}/widget/${WIDGET_KEY}";
           var widgetOrigin = new URL(widgetUrl).origin;
-          var widgetSide = "left";
+          var widgetSide = "right";
           var launcherLabel = "Open chat support";
 
           function createLauncher() {
