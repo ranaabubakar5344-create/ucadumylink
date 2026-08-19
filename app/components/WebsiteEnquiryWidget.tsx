@@ -26,47 +26,68 @@ export default function WebsiteEnquiryWidget() {
             launcher.setAttribute("aria-label", launcherLabel);
             launcher.setAttribute("aria-expanded", "false");
 
+            var avatarUrl = "/chat.png";
+
             launcher.innerHTML =
-              '<span style="position:relative;display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:999px;background:#C8EB00;box-shadow:0 12px 30px rgba(200,235,0,0.35);flex-shrink:0;">' +
-                '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#0A1414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+              '<span style="position:relative;display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:999px;background:#FFFFFF;box-shadow:0 0 0 2px rgba(200,235,0,0.95);flex-shrink:0;overflow:visible;">' +
+                '<span style="display:block;width:58px;height:58px;border-radius:999px;overflow:hidden;background:#F7F5EE;">' +
+                  '<img src="' + avatarUrl + '" alt="UCA Admissions Assistant" style="display:block;width:100%;height:100%;object-fit:cover;" />' +
+                '</span>' +
+                '<span style="position:absolute;right:-1px;bottom:2px;width:14px;height:14px;border-radius:999px;background:#C8EB00;border:2px solid #0A1414;box-shadow:0 0 0 2px #FFFFFF;"></span>' +
+              '</span>' +
+
+              '<span style="display:flex;min-width:0;flex:1;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left;">' +
+                '<span style="display:flex;align-items:center;gap:6px;font-size:17px;line-height:1.15;font-weight:800;color:#FFFFFF;white-space:nowrap;">Hi there <span aria-hidden="true">👋</span></span>' +
+                '<span style="margin-top:5px;font-size:13px;line-height:1.35;font-weight:600;color:#D8DEDD;white-space:nowrap;">Need help?</span>' +
+                '<span style="font-size:13px;line-height:1.35;font-weight:800;color:#C8EB00;white-space:nowrap;">Chat with us.</span>' +
+              '</span>' +
+
+              '<span style="display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:999px;border:2px solid #C8EB00;color:#C8EB00;flex-shrink:0;background:rgba(200,235,0,0.04);">' +
+                '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
                   '<path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>' +
                   '<path d="M8 10h8"></path>' +
                   '<path d="M8 14h5"></path>' +
                 '</svg>' +
-                '<span style="position:absolute;top:-2px;right:-2px;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#0A1414;color:#FFFFFF;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid #ffffff;">1</span>' +
               '</span>' +
-              '<span style="display:flex;flex-direction:column;align-items:flex-start;line-height:1.1;min-width:0;">' +
-                '<span style="font-size:14px;font-weight:800;color:#FFFFFF;white-space:nowrap;">Hi there 👋</span>' +
-                '<span style="font-size:12px;font-weight:700;color:#C8EB00;white-space:nowrap;">Need help? Chat with us</span>' +
-              '</span>';
+
+              '<span style="position:absolute;left:50%;bottom:-28px;transform:translateX(-50%);display:flex;align-items:center;gap:7px;padding:7px 12px;border-radius:10px;background:#FFFFFF;color:#0A1414;font-size:11px;font-weight:700;box-shadow:0 8px 24px rgba(10,20,20,0.14);white-space:nowrap;">' +
+                '<span style="width:8px;height:8px;border-radius:999px;background:#C8EB00;"></span>' +
+                'We&#39;re online' +
+              '</span>' +
+
+              '<span style="position:absolute;left:50%;bottom:-8px;width:16px;height:16px;background:#0A1414;transform:translateX(-50%) rotate(45deg);border-right:1px solid rgba(200,235,0,0.18);border-bottom:1px solid rgba(200,235,0,0.18);"></span>';
 
             launcher.style.position = "fixed";
-            launcher.style.bottom = "18px";
+            launcher.style.bottom = "52px";
             launcher.style[widgetSide] = "18px";
-            launcher.style.minHeight = "68px";
-            launcher.style.padding = "8px 18px 8px 8px";
-            launcher.style.border = "1px solid rgba(200,235,0,0.18)";
-            launcher.style.borderRadius = "999px";
+            launcher.style.width = "min(330px, calc(100vw - 36px))";
+            launcher.style.minHeight = "94px";
+            launcher.style.padding = "14px 16px";
+            launcher.style.border = "1px solid rgba(200,235,0,0.34)";
+            launcher.style.borderRadius = "28px";
             launcher.style.background = "linear-gradient(135deg, #0A1414 0%, #113131 100%)";
-            launcher.style.color = "#ffffff";
+            launcher.style.color = "#FFFFFF";
             launcher.style.fontFamily = "Inter, Arial, sans-serif";
             launcher.style.cursor = "pointer";
-            launcher.style.boxShadow = "0 18px 45px rgba(10,20,20,0.32)";
+            launcher.style.boxShadow = "0 20px 48px rgba(10,20,20,0.30)";
             launcher.style.zIndex = "2147483001";
-            launcher.style.display = "inline-flex";
+            launcher.style.display = "flex";
             launcher.style.alignItems = "center";
-            launcher.style.gap = "12px";
-            launcher.style.maxWidth = "calc(100vw - 32px)";
-            launcher.style.transition = "transform 0.18s ease, box-shadow 0.18s ease";
+            launcher.style.gap = "14px";
+            launcher.style.maxWidth = "calc(100vw - 36px)";
+            launcher.style.transition =
+              "transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease";
 
             launcher.addEventListener("mouseenter", function () {
-              launcher.style.transform = "translateY(-2px)";
-              launcher.style.boxShadow = "0 22px 50px rgba(10,20,20,0.36)";
+              launcher.style.transform = "translateY(-3px)";
+              launcher.style.boxShadow = "0 24px 58px rgba(10,20,20,0.36)";
+              launcher.style.borderColor = "rgba(200,235,0,0.72)";
             });
 
             launcher.addEventListener("mouseleave", function () {
               launcher.style.transform = "translateY(0)";
-              launcher.style.boxShadow = "0 18px 45px rgba(10,20,20,0.32)";
+              launcher.style.boxShadow = "0 20px 48px rgba(10,20,20,0.30)";
+              launcher.style.borderColor = "rgba(200,235,0,0.34)";
             });
 
             return launcher;
@@ -128,7 +149,7 @@ export default function WebsiteEnquiryWidget() {
               }
 
               frame.style.display = "none";
-              launcher.style.display = "inline-flex";
+              launcher.style.display = "flex";
               launcher.setAttribute("aria-expanded", "false");
             });
 
