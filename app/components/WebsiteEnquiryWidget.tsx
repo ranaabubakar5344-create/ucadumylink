@@ -31,7 +31,7 @@ export default function WebsiteEnquiryWidget() {
             launcher.innerHTML =
               '<span style="position:relative;display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:999px;background:#FFFFFF;box-shadow:0 0 0 2px rgba(200,235,0,0.95);flex-shrink:0;overflow:visible;">' +
                 '<span style="display:block;width:58px;height:58px;border-radius:999px;overflow:hidden;background:#F7F5EE;">' +
-                  '<img src="' + avatarUrl + '" alt="UCA Admissions Assistant" style="display:block;width:100%;height:100%;object-fit:cover;" />' +
+                  '<img src="' + avatarUrl + '" alt="UCA UAQ Admissions Assistant" style="display:block;width:100%;height:100%;object-fit:cover;" />' +
                 '</span>' +
                 '<span style="position:absolute;right:-1px;bottom:2px;width:14px;height:14px;border-radius:999px;background:#C8EB00;border:2px solid #0A1414;box-shadow:0 0 0 2px #FFFFFF;"></span>' +
               '</span>' +
