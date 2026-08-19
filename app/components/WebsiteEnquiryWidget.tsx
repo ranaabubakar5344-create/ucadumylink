@@ -53,9 +53,7 @@ export default function WebsiteEnquiryWidget() {
               '<span style="position:absolute;left:50%;bottom:-28px;transform:translateX(-50%);display:flex;align-items:center;gap:7px;padding:7px 12px;border-radius:10px;background:#FFFFFF;color:#0A1414;font-size:11px;font-weight:700;box-shadow:0 8px 24px rgba(10,20,20,0.14);white-space:nowrap;">' +
                 '<span style="width:8px;height:8px;border-radius:999px;background:#C8EB00;"></span>' +
                 'We&#39;re online' +
-              '</span>' +
-
-              '<span style="position:absolute;left:50%;bottom:-8px;width:16px;height:16px;background:#0A1414;transform:translateX(-50%) rotate(45deg);border-right:1px solid rgba(200,235,0,0.18);border-bottom:1px solid rgba(200,235,0,0.18);"></span>';
+              '</span>';
 
             launcher.style.position = "fixed";
             launcher.style.bottom = "52px";
